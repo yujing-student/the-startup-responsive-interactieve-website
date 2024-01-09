@@ -100,7 +100,18 @@ dd {
 }
 @media (min-width: 50em) and (max-width: 80em) {
     .image-change {
-        width: 800px;
+        width: 600px;
+    }
+    .menu-ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width:25em;
+    }
+}
+@media (min-width: 80em)  {
+    .image-change {
+        width: 600px;
     }
     .menu-ul {
         display: flex;
