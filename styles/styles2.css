@@ -1,0 +1,111 @@
+@font-face {
+    font-family: "proximanova";
+    src: url("/font/ProximaNova-Regular_2607783814.otf");
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: proximanova, Arial;
+    padding-inline: 2em;
+}
+
+/*todo er moet een grid komen vanaf pronkegevel want de makelaars adverientie zit op desktop rechts en dat moet zodat de gebruiker snel ziet */
+.menu {
+    background-color: orange;
+}
+
+/*.menu-ul {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: space-between;*/
+/*}*/
+
+main {
+
+}
+
+.main-images { /*scrollbar dit opzoeken css chalenge flexbox*/
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.multiple-images {
+    display: flex;
+}
+
+.multiple-images__images-ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.list-images {
+    display: flex;
+    flex-direction: column;
+}
+
+.images-houses {
+    display: flex;
+    flex-shrink: 4;
+}
+
+.full-description {
+    text-decoration: none;
+    color: #45b5e7;
+
+}
+
+.hide-description {
+    display: none;
+}
+
+dd {
+    inset: 5em 5em 6em 5em;
+}
+
+.in-de-buurt {
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 1em) and (max-width: 30em) {
+    .image-change {
+        width: 200px;
+    }
+    .menu {
+        background-color: orange;
+        /*width: 50em;*/
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu-ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 30em) and (max-width: 50em) {
+    .image-change {
+        min-width: 500px;
+        max-width: 800px;
+    }
+    .menu-ul{
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+        width:25em;
+        margin:1em;
+    }
+}
+@media (min-width: 50em) and (max-width: 80em) {
+    .image-change {
+        width: 800px;
+    }
+    .menu-ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width:25em;
+    }
+}
