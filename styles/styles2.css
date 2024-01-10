@@ -98,7 +98,7 @@ dd {
         margin:1em;
     }
 }
-@media (min-width: 50em) and (max-width: 80em) {
+@media (min-width: 50em)  {
     .image-change {
         width: 600px;
     }
@@ -108,6 +108,7 @@ dd {
         justify-content: space-between;
         width:25em;
     }
+
 }
 @media (min-width: 80em)  {
     .image-change {
