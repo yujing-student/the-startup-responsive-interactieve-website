@@ -206,19 +206,18 @@ dd {
     .images-houses{
         display: none;
     }
-
-    .grid-item:nth-child(1) {
+    .grid-container-info{
+        display: grid;
+        grid-template-areas: 'a a';
+    }
+    .broker-advert{
+        height: 15em;
         /*background-color: red;*/
-    }
-
-    .grid-item:nth-child(2) {
-        /*background-color: green;*/
+        display: flex;
+        flex-direction: column;
     }
 
 
-    .image-change {
-        /*width: 600px;*/
-    }
 
     .menu-ul {
         display: flex;
