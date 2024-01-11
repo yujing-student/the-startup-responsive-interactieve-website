@@ -164,17 +164,6 @@ dd {
         grid-template-areas: "main second"
     "carousel carousel";
     }
-    .grid-images:nth-child(1){
-        background-color: red;
-        display: grid;
-    }
-    .grid-images:nth-child(2){
-        background-color: green;
-    }
-    .grid-images:nth-child(3){
-        background-color: orange;
-        width: 100%;
-    }
     .image-change {
         min-width: 500px;
         max-width: 800px;
@@ -194,9 +183,25 @@ dd {
 }
 
 @media (min-width: 992px) {
-    .grid-container {
+    .grid-container-images{
         display: grid;
-        /*grid-template-areas: "info add";*/
+        grid-template-areas: "main second"
+    "carousel carousel";
+        /*grid-template-columns: 10em 1fr;*/
+    }
+    .image-change {
+        min-width: 500px;
+        max-width: 800px;
+    }
+    /*.image3{*/
+    /*    display: none;*/
+    /*}*/
+    .image1,.image2,.image3{
+        min-width: 300px;
+        background-color: red;
+    }
+    .images-houses{
+        display: none;
     }
 
     .grid-item:nth-child(1) {
@@ -209,7 +214,7 @@ dd {
 
 
     .image-change {
-        width: 600px;
+        /*width: 600px;*/
     }
 
     .menu-ul {
