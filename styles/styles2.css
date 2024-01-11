@@ -12,6 +12,7 @@ body {
 }
 
 /*todo er moet een grid komen vanaf pronkegevel want de makelaars adverientie zit op desktop rechts en dat moet zodat de gebruiker snel ziet */
+/*todo er moeten bij desktop nog 2 foto's*/
 .menu {
     background-color: orange;
     min-width: 30em;
@@ -174,10 +175,12 @@ dd {
     .image1,.image2{
        width: 300px;
     }
-    .images-houses{
-        display: none;
-    }
-
+.text-under-image{
+    margin: 0em 5em 0em 0em;
+}
+.images-houses{
+    display: none;
+}
 
 
 }
