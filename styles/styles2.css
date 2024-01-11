@@ -8,8 +8,7 @@ body {
     flex-direction: column;
     font-family: proximanova, Arial;
     padding-inline: 2em;
-    margin: 0 auto
-;
+    margin: 0 auto;
 }
 
 /*todo er moet een grid komen vanaf pronkegevel want de makelaars adverientie zit op desktop rechts en dat moet zodat de gebruiker snel ziet */
@@ -33,38 +32,22 @@ main {
 
 }
 
-.multiple-images {
-    display: flex;
-    overflow-x: auto;
-    white-space: nowrap;
-}
 
-.multiple-images__images-ul {
-    display: flex;
-    flex-direction: row;
-}
-
-.list-images {
-    display: flex;
-    flex-direction: column;
-}
-
-.images-houses {
-    display: flex;
-    flex-shrink: 4;
-}
 
 .full-description {
     text-decoration: none;
     /*color: #45b5e7;*/
 
 }
-button:hover{
+
+button:hover {
     background-color: orange;
 }
-a{
+
+a {
     color: #050542;
 }
+
 .hide-description {
     display: none;
 }
@@ -74,8 +57,9 @@ dd {
     top: -1.2em;
     left: 10em;
 }
-.add-my-home{
-    background-color: #3b9cda;
+
+.add-my-home {
+    background-color: #4bafef;
     height: 13em;
     /*width: 25em;*/
 }
@@ -84,10 +68,8 @@ dd {
     display: flex;
     flex-direction: column;
 }
-@media (min-width: 1em) and (max-width: 30em) {
-    .image-change {
-        width: 200px;
-    }
+
+@media (min-width: 1px) and (max-width: 480px) {
     .menu {
         background-color: orange;
         /*width: 50em;*/
@@ -101,41 +83,154 @@ dd {
         justify-content: space-between;
         min-width: 30em;
     }
+    .image-change {
+        width: 200px;
+    }
+    .image1,.image2,.image3,.image4{
+        display: none;
+    }
+    .multiple-images {
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .multiple-images__images-ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .list-images {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .images-houses {
+        display: flex;
+        flex-shrink: 4;
+    }
+
+
 }
 
-@media (min-width: 30em) and (max-width: 52em) {
-    .image-change {
-        min-width: 500px;
-        max-width: 800px;
-    }
-    .menu-ul{
+@media (min-width: 480px) and (max-width: 768px) {
+    .menu-ul {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         /*margin: 0 1em 0 0;*/
-        width:25em;
+        width: 25em;
     }
-}
-@media (min-width: 52em)  {
     .image-change {
-        width: 600px;
+        min-width: 500px;
+        max-width: 800px;
     }
-    .menu-ul {
+    .image1,.image2,.image3,.image4{
+        display: none;
+    }
+    .multiple-images {
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .multiple-images__images-ul {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        width:25em;
+    }
+
+    .list-images {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .images-houses {
+        display: flex;
+        flex-shrink: 4;
     }
 
 }
-@media (min-width: 80em)  {
-    .image-change {
-        width: 600px;
-    }
+
+@media (min-width: 768px) {
     .menu-ul {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width:25em;
+        /*margin: 0 1em 0 0;*/
+        width: 25em;
+    }
+    .grid-container-images{
+        display: grid;
+        grid-template-areas: "main second"
+    "carousel carousel";
+    }
+    .grid-images:nth-child(1){
+        background-color: red;
+        display: grid;
+    }
+    .grid-images:nth-child(2){
+        background-color: green;
+    }
+    .grid-images:nth-child(3){
+        background-color: orange;
+        width: 100%;
+    }
+    .image-change {
+        min-width: 500px;
+        max-width: 800px;
+    }
+    .image3,.image4{
+        display: none;
+    }
+    .image1,.image2{
+       width: 300px;
+    }
+    .images-houses{
+        display: none;
+    }
+
+
+
+}
+
+@media (min-width: 992px) {
+    .grid-container {
+        display: grid;
+        /*grid-template-areas: "info add";*/
+    }
+
+    .grid-item:nth-child(1) {
+        /*background-color: red;*/
+    }
+
+    .grid-item:nth-child(2) {
+        /*background-color: green;*/
+    }
+
+
+    .image-change {
+        width: 600px;
+    }
+
+    .menu-ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 25em;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    /*very large screen bigger */
+    .image-change {
+        width: 600px;
+    }
+
+    .menu-ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 25em;
     }
 }
