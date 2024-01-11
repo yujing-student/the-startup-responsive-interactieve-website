@@ -8,30 +8,35 @@ body {
     flex-direction: column;
     font-family: proximanova, Arial;
     padding-inline: 2em;
+    margin: 0 auto
+;
 }
 
 /*todo er moet een grid komen vanaf pronkegevel want de makelaars adverientie zit op desktop rechts en dat moet zodat de gebruiker snel ziet */
 .menu {
     background-color: orange;
+    min-width: 30em;
 }
 
-/*.menu-ul {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    justify-content: space-between;*/
-/*}*/
+.menu-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 main {
 
 }
 
+
 .main-images { /*scrollbar dit opzoeken css chalenge flexbox*/
-    overflow-x: auto;
-    white-space: nowrap;
+
 }
 
 .multiple-images {
     display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 .multiple-images__images-ul {
@@ -51,16 +56,28 @@ main {
 
 .full-description {
     text-decoration: none;
-    color: #45b5e7;
+    /*color: #45b5e7;*/
 
 }
-
+button:hover{
+    background-color: orange;
+}
+a{
+    color: #050542;
+}
 .hide-description {
     display: none;
 }
 
 dd {
-    inset: 5em 5em 6em 5em;
+    position: relative;
+    top: -1.2em;
+    left: 10em;
+}
+.add-my-home{
+    background-color: #3b9cda;
+    height: 13em;
+    /*width: 25em;*/
 }
 
 .in-de-buurt {
@@ -82,23 +99,24 @@ dd {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        min-width: 30em;
     }
 }
 
-@media (min-width: 30em) and (max-width: 50em) {
+@media (min-width: 30em) and (max-width: 52em) {
     .image-change {
         min-width: 500px;
         max-width: 800px;
     }
     .menu-ul{
-        flex-direction: row;
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
+        /*margin: 0 1em 0 0;*/
         width:25em;
-        margin:1em;
     }
 }
-@media (min-width: 50em)  {
+@media (min-width: 52em)  {
     .image-change {
         width: 600px;
     }
