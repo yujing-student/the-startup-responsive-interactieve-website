@@ -209,6 +209,7 @@ dd {
     .grid-container-info{
         display: grid;
         grid-template-areas: 'a a';
+        grid-template-columns: 50em 1fr;
     }
     .broker-advert{
         height: 15em;
