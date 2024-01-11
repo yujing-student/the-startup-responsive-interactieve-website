@@ -33,6 +33,9 @@ main {
 
 }
 
+.log-funda{
+    width: 100px;
+}
 
 
 .full-description {
@@ -76,6 +79,14 @@ dd {
         /*width: 50em;*/
         display: flex;
         flex-direction: row;
+    }
+    .hamburger{
+        font-size: 2em;
+        float: right;
+    }
+    .navbar{
+        display: none
+    ;
     }
 
     .menu-ul {
