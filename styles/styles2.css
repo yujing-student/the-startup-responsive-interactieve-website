@@ -217,6 +217,9 @@ dd {
         display: flex;
         flex-direction: column;
     }
+    .contact-broker{
+        width: 15em;
+    }
 
 
 
