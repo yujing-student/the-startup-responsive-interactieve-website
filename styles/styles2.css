@@ -129,9 +129,19 @@ dd {
     .menu-ul {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        /*margin: 0 1em 0 0;*/
-        width: 25em;
+        /*justify-content: space-between;*/
+        /*margin: -2em 3em 0em 5em;*/
+        /*width: 22em;*/
+        justify-content: flex-end;
+
+    }
+    .navbar{
+        margin: -3em 0em -2em 2em;
+
+    }
+    .hamburger{
+        display: none;
+
     }
     .image-change {
         min-width: 500px;
@@ -164,11 +174,14 @@ dd {
 }
 
 @media (min-width: 768px) {
+    .hamburger{
+        display: none;
+    }
     .menu-ul {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        /*margin: 0 1em 0 0;*/
+        margin: -2em 3em 0em 5em;
         width: 25em;
     }
     .grid-container-images{
@@ -186,17 +199,21 @@ dd {
     .image1,.image2{
        width: 300px;
     }
-.text-under-image{
-    margin: 0em 5em 0em 0em;
-}
-.images-houses{
-    display: none;
-}
+    .text-under-image{
+        margin: 0em 5em 0em 0em;
+    }
+    .images-houses{
+        display: none;
+    }
+
 
 
 }
 
 @media (min-width: 992px) {
+    .hamburger{
+        display: none;
+    }
     .grid-container-images{
         display: grid;
         grid-template-areas: "main second"
