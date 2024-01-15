@@ -10,8 +10,7 @@ body {
     scroll-behavior: smooth;
 }
 
-/*todo er moet een grid komen vanaf pronkegevel want de makelaars adverientie zit op desktop rechts en dat moet zodat de gebruiker snel ziet */
-/*todo er moeten bij desktop nog 2 foto's*/
+
 header{
     background-color: orange;
     position: relative;
@@ -29,11 +28,13 @@ header{
 }
 
 .menu-ul{
-    display: none;
+    display: block;
     /* todo   translate toevoegen dat die van boven naar beneden gaat de interactie*/
+    margin-top: -15em;
 }
 .menu-ul-open{
     display: block;
+    margin-top: 0;
 }
 .main-picture{
     width: 320px;
