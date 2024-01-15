@@ -28,36 +28,39 @@
     <img alt="logo funda" class="log-funda" src="../images/fundawonen-logo.svg">
     <!--       <i class='bx bx-menu hamburger'></i>-->
     <button class="hamburger-icon" type="button"><img alt="menu icon" class="" src="../images/menubar.png"></button>
+    <nav class="menu">
 
+        <ul class="menu-ul">
+            <li class="menu__li"><a href="#">kopen</a></li>
+            <li class="menu__li"><a href="#">huren</a></li>
+            <li class="menu__li"><a href="#">verkopen</a></li>
+            <li class="menu__li"><a href="#">Mijn huis</a></li>
+            <li class="menu__li"><img alt="login icon" src="../images/log-in-regular-24.png"></li>
+
+        </ul>
+
+    </nav>
 </header>
-<nav class="menu">
 
-    <ul class="menu-ul">
-        <li class="menu__li"><a href="#">kopen</a></li>
-        <li class="menu__li"><a href="#">huren</a></li>
-        <li class="menu__li"><a href="#">verkopen</a></li>
-        <li class="menu__li"><a href="#">Mijn huis</a></li>
-        <li class="menu__li"><img alt="login icon" src="../images/log-in-regular-24.png"></li>
-
-    </ul>
-
-</nav>
 
 
 <main>
 <div class="gridcontainer">
 
 
-        <div class="grid-container-images grid-item grid-item1" >
+        <div class=" grid-item five-images-grid" >
             <img alt="hoofdfoto huis" class="main-picture images-houses-1" src="../images/hoofdfoto.jpg">
-            <img alt="hoofdfoto huis" class="images-next-to-main-images images-houses-2"
-                 src="../images/eettafel.jpg">
-            <img alt="hoofdfoto huis" class="images-next-to-main-images images-houses-3" src="../images/woonkamer.jpg">
-            <img alt="hoofdfoto huis" class="images-next-to-main-images images-houses-4" src="../images/tuin.jpg">
-            <img alt="hoofdfoto huis" class="images-next-to-main-images images-houses-5" src="../images/video.jpg">
-        </div>
 
-        <div tabindex="0" class="grid-item grid-item2">
+        </div>
+    <div class="small-images grid-container-images">
+        <img alt="hoofdfoto huis" class="images-next-to-main-images images-houses-2"
+             src="../images/eettafel.jpg">
+        <img alt="hoofdfoto huis" class="images-next-to-main-images images-houses-3" src="../images/woonkamer.jpg">
+        <img alt="hoofdfoto huis" class="images-next-to-main-images images-houses-4" src="../images/tuin.jpg">
+        <img alt="hoofdfoto huis" class="images-next-to-main-images images-houses-5" src="../images/video.jpg">
+    </div>
+
+        <div tabindex="0" class="grid-item carousel-grid">
             <ul class="carousel-images">
                 <li>
                     <img alt="hoofdfoto" class="small-images-carousel" src="../images/plattegrond.png">
@@ -78,7 +81,7 @@
             </ul>
         </div>
 
-        <div class="grid-container-info grid-item" ><!--titel kijrgen-->
+        <div class="info-grid grid-item" ><!--titel kijrgen-->
             <section class="info-house" tabindex="0">
                 <h1>pronkgevel1</h1>
                 <p>1566 LN Assendelft</p>
@@ -199,8 +202,8 @@
                     <dd>In overleg</dd>
                 </dl>
 
-                <button type="button">bekijk alle kenmerken</button>
-                <dl class="hide-description">
+                <button class="button-show-charactize" type="button">bekijk alle kenmerken</button>
+                <dl class="hide-characterize">
                     <dt>vraagprijs</dt>
                     <dd>kosten koper</dd>
                     <dt>vraagprijs</dt>

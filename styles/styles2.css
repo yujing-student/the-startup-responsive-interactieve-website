@@ -234,7 +234,7 @@ dd {
     .images-houses{
         display: none;
     }
-    .grid-container-info{
+    .info-grid{
         display: grid;
         grid-template-areas: 'a a';
         grid-template-columns: 50em 1fr;
