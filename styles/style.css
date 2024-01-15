@@ -186,7 +186,8 @@ table{
     }
     .small-images{
       display: grid;
-        grid-template-areas: 'a a';
+        grid-template-columns: auto auto; /* 2fr for the main image, 1fr for the other images */
+        grid-template-rows: auto auto;
         /*column-gap: 1em;*/
     }
     .carousel-grid{/*overflow plattegrond 60 video*/

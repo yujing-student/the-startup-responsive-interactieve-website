@@ -15,7 +15,7 @@
 
     <!-- Link to JavaScript script -->
 
-    <script type="text/javascript" defer src="scripts/v2.js">
+    <script defer src="scripts/v2.js" type="text/javascript">
 
     </script>
     <!--geen defer vanwege error in w3c validator-->
@@ -43,12 +43,11 @@
 </header>
 
 
-
 <main>
-<div class="gridcontainer">
+    <div class="gridcontainer">
 
 
-        <div class=" grid-item five-images-grid grid-container-images" >
+        <div class=" grid-item five-images-grid grid-container-images">
             <img alt="hoofdfoto huis" class="main-picture images-houses-1" src="images/hoofdfoto.jpg">
             <div class="small-images ">
                 <img alt="hoofdfoto huis" class="images-next-to-main-images images-houses-2"
@@ -61,7 +60,7 @@
         </div>
 
 
-        <div tabindex="0" class="grid-item carousel-grid">
+        <div class="grid-item carousel-grid" tabindex="0">
             <ul class="carousel-images">
                 <li>
                     <img alt="hoofdfoto" class="small-images-carousel" src="images/plattegrond.png">
@@ -82,7 +81,7 @@
             </ul>
         </div>
 
-        <div class="info-grid grid-item" ><!--titel kijrgen-->
+        <div class="info-grid grid-item"><!--titel kijrgen-->
             <section class="info-house" tabindex="0">
                 <h1>pronkgevel1</h1>
                 <p>1566 LN Assendelft</p>
@@ -98,10 +97,12 @@
             </section>
             <div class="buttons-to-go">
                 <p class="buttons-to-go__p-text">klik op de volgende knoppen naar het onderwerp te gaan</p>
-                <button class="buttons-to-go__button-style" type="button"><a href="#description">Omschrijving</a></button>
+                <button class="buttons-to-go__button-style" type="button"><a href="#description">Omschrijving</a>
+                </button>
                 <button class="buttons-to-go__button-style" type="button"><a href="#characterize">kenmerken</a></button>
                 <button class="buttons-to-go__button-style" type="button"><a href="#transfer">overdracht</a></button>
-                <button class="buttons-to-go__button-style" type="button"><a href="#add-Home">waarde checken huis</a></button>
+                <button class="buttons-to-go__button-style" type="button"><a href="#add-Home">waarde checken huis</a>
+                </button>
             </div>
             <section>
                 <h2 id="description">Omschrijving</h2>
@@ -159,10 +160,12 @@
                 </p>
             </section>
             <section>
-                <h2 id="characterize">Kenmerken</h2><!--https://www.funda.nl/koop/assendelft/huis-42349645-pronkgevel-1/-->
+                <h2 id="characterize">Kenmerken</h2>
+                <!--https://www.funda.nl/koop/assendelft/huis-42349645-pronkgevel-1/-->
                 <form>
                     <label for="kenmerk">zoek op kenmerken</label>
-                    <label for="kenmerk"></label><input id="kenmerk" name="q" type="search" placeholder="zoeken kenmerken"/>
+                    <label for="kenmerk"></label><input id="kenmerk" name="q" placeholder="zoeken kenmerken"
+                                                        type="search"/>
                     <button type="submit">Search</button>
                 </form>
 
@@ -234,7 +237,8 @@
                     <label for="postcode"> huisnummmer</label>
                     <input id="housnumber" name="housnumber" type="number"/>
                     <label for="postcode"> toevoeging</label>
-                    <label for="add"></label><input class="disable-input" id="add" name="toevoeging" type="number" placeholder="number"/>
+                    <label for="add"></label><input class="disable-input" id="add" name="toevoeging" placeholder="number"
+                                                    type="number"/>
 
                     <button type="button">check je waarde</button>
                 </section>
@@ -306,7 +310,7 @@
                 <p>grootte-advertiente</p>
             </div>
         </div>
-</div>
+    </div>
 </main>
 <footer>
 
