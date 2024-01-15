@@ -171,18 +171,23 @@ table{
 
         grid-row-start: 1;
         grid-column-start: 1;
+        grid-column-end: 2;
     }
     .grid-container-images {
         display: grid;
         grid-template-columns: 1fr 1fr; /* 2fr for the main image, 1fr for the other images */
         grid-template-rows: auto auto;
+        column-gap: 2em;
     }
+
     .images-next-to-main-images{
-        width: 300px;
+        width: 200px;
+        margin: 0 1em 1em 0;
     }
     .small-images{
-        grid-row-start: 1;
-        grid-column-start: 2;
+      display: grid;
+        grid-template-areas: 'a a';
+        /*column-gap: 1em;*/
     }
     .carousel-grid{/*overflow plattegrond 60 video*/
         /*grid-area: 2 / 1;*/
