@@ -7,7 +7,7 @@
     <meta content="detailpagina funda" name="description">
 
     <!-- Link to CSS -->
-    <link href="v2.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
 
     <!-- Link to boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -15,73 +15,70 @@
 
     <!-- Link to JavaScript script -->
 
-    <script type="text/javascript" defer src="v2.js">
+    <script type="text/javascript" defer src="script.js">
 
     </script>
     <!--geen defer vanwege error in w3c validator-->
 
-    <title>v2</title>
+    <title>Homepagina</title>
     <!--    hier werkt de rode knp weer niet oorzaak niet bekend-->
 </head>
 <body><!--https://dequeuniversity.com/screenreaders/-->
 <header>
-    <img alt="logo funda" class="log-funda" src="../images/fundawonen-logo.svg">
+    <img alt="logo funda" class="log-funda" src="../../images/fundawonen-logo.svg">
     <!--       <i class='bx bx-menu hamburger'></i>-->
-    <button class="hamburger-icon" type="button"><img alt="menu icon" class="" src="../images/menubar.png"></button>
-    <nav class="menu">
+    <button class="hamburger-icon" type="button"><img alt="menu icon" class="" src="../../images/menubar.png"></button>
 
-        <ul class="menu-ul">
-            <li class="menu__li"><a href="#">kopen</a></li>
-            <li class="menu__li"><a href="#">huren</a></li>
-            <li class="menu__li"><a href="#">verkopen</a></li>
-            <li class="menu__li"><a href="#">Mijn huis</a></li>
-            <li class="menu__li"><img alt="login icon" src="../images/log-in-regular-24.png"></li>
-
-        </ul>
-
-    </nav>
 </header>
+<nav class="menu">
 
+    <ul class="menu-ul">
+        <li class="menu__li"><a href="#">kopen</a></li>
+        <li class="menu__li"><a href="#">huren</a></li>
+        <li class="menu__li"><a href="#">verkopen</a></li>
+        <li class="menu__li"><a href="#">Mijn huis</a></li>
+        <li class="menu__li"><img alt="login icon" src="../../images/log-in-regular-24.png"></li>
+
+    </ul>
+
+</nav>
 
 
 <main>
 <div class="gridcontainer">
 
 
-        <div class=" grid-item five-images-grid" >
-            <img alt="hoofdfoto huis" class="main-picture images-houses-1" src="../images/hoofdfoto.jpg">
-
+        <div class="grid-container-images grid-item grid-item1" >
+            <img alt="hoofdfoto huis" class="main-picture images-houses-1" src="../../images/hoofdfoto.jpg">
+            <img alt="hoofdfoto huis" class="images-next-to-main-images images-houses-2"
+                 src="../../images/eettafel.jpg">
+            <img alt="hoofdfoto huis" class="images-next-to-main-images images-houses-3" src="../../images/woonkamer.jpg">
+            <img alt="hoofdfoto huis" class="images-next-to-main-images images-houses-4" src="../../images/tuin.jpg">
+            <img alt="hoofdfoto huis" class="images-next-to-main-images images-houses-5" src="../../images/video.jpg">
         </div>
-    <div class="small-images grid-container-images">
-        <img alt="hoofdfoto huis" class="images-next-to-main-images images-houses-2"
-             src="../images/eettafel.jpg">
-        <img alt="hoofdfoto huis" class="images-next-to-main-images images-houses-3" src="../images/woonkamer.jpg">
-        <img alt="hoofdfoto huis" class="images-next-to-main-images images-houses-4" src="../images/tuin.jpg">
-        <img alt="hoofdfoto huis" class="images-next-to-main-images images-houses-5" src="../images/video.jpg">
-    </div>
 
-        <div tabindex="0" class="grid-item carousel-grid">
+        <div tabindex="0" class="grid-item grid-item2">
             <ul class="carousel-images">
                 <li>
-                    <img alt="hoofdfoto" class="small-images-carousel" src="../images/plattegrond.png">
+                    <img alt="hoofdfoto" class="small-images-carousel" src="../../images/plattegrond.png">
                     <p>plattegrond</p>
                 </li>
                 <li>
-                    <img alt="hoofdfoto" class="small-images-carousel" src="../images/plattegrond.png">
+                    <img alt="hoofdfoto" class="small-images-carousel" src="../../images/plattegrond.png">
                     <p>360</p>
                 </li>
                 <li>
-                    <img alt="hoofdfoto" class="small-images-carousel" src="../images/plattegrond.png">
+                    <img alt="hoofdfoto" class="small-images-carousel" src="../../images/plattegrond.png">
                     <p>video</p>
                 </li>
                 <li>
-                    <img alt="hoofdfoto" class="small-images-carousel" src="../images/plattegrond.png">
+                    <img alt="hoofdfoto" class="small-images-carousel" src="../../images/plattegrond.png">
                     <p>47 fotos</p>
                 </li>
             </ul>
         </div>
 
-        <div class="info-grid grid-item" ><!--titel kijrgen-->
+        <div class="grid-container-info grid-item" ><!--titel kijrgen-->
             <section class="info-house" tabindex="0">
                 <h1>pronkgevel1</h1>
                 <p>1566 LN Assendelft</p>
@@ -97,13 +94,13 @@
             </section>
             <div class="buttons-to-go">
                 <p class="buttons-to-go__p-text">klik op de volgende knoppen naar het onderwerp te gaan</p>
-                <button class="buttons-to-go__button-style" type="button"><a href="#description">Omschrijving</a></button>
-                <button class="buttons-to-go__button-style" type="button"><a href="#characterize">kenmerken</a></button>
-                <button class="buttons-to-go__button-style" type="button"><a href="#transfer">overdracht</a></button>
-                <button class="buttons-to-go__button-style" type="button"><a href="#add-Home">waarde checken huis</a></button>
+                <button class="buttons-to-go__button-style" type="button">Omschrijving</button>
+                <button class="buttons-to-go__button-style" type="button">kenmerken</button>
+                <button class="buttons-to-go__button-style" type="button">activiteiten</button>
+                <button class="buttons-to-go__button-style" type="button">kaart</button>
             </div>
             <section>
-                <h2 id="description">Omschrijving</h2>
+                <h2>Omschrijving</h2>
                 <p tabindex="0">Een pronkgevel is een gevel van een gebouw, dat is ontworpen om te imponeren. Het
                     betreft
                     meestal de
@@ -158,7 +155,7 @@
                 </p>
             </section>
             <section>
-                <h2 id="characterize">Kenmerken</h2><!--https://www.funda.nl/koop/assendelft/huis-42349645-pronkgevel-1/-->
+                <h2>Kenmerken</h2><!--https://www.funda.nl/koop/assendelft/huis-42349645-pronkgevel-1/-->
                 <form>
                     <label for="kenmerk">zoek op kenmerken</label>
                     <label for="kenmerk"></label><input id="kenmerk" name="q" type="search" placeholder="zoeken kenmerken"/>
@@ -167,7 +164,7 @@
 
             </section>
             <div tabindex="0">
-                <h3 id="transfer">overdracht</h3>
+                <h3>overdracht</h3>
                 <dl class="dl-list">
                     <dt>vraagprijs</dt>
                     <dd>€ 450.000 kosten koper
@@ -202,8 +199,8 @@
                     <dd>In overleg</dd>
                 </dl>
 
-                <button class="button-show-charactize" type="button">bekijk alle kenmerken</button>
-                <dl class="hide-characterize">
+                <button type="button">bekijk alle kenmerken</button>
+                <dl class="hide-description">
                     <dt>vraagprijs</dt>
                     <dd>kosten koper</dd>
                     <dt>vraagprijs</dt>
@@ -223,7 +220,7 @@
                 </dl>
             </div>
             <div>
-                <section class="add-my-home" id="add-Home">
+                <section class="add-my-home">
                     <h3>Wat is jouw huis waard?</h3>
                     <p tabindex="0">Krijg direct inzicht in de waarde en populariteit van je huis door je adres toe
                         te voegen in Mijn Huis.</p>
@@ -291,7 +288,7 @@
 
             </div>
             <div>
-                <img alt="map-images" class="image-change" src="../images/map.png">
+                <img alt="map-images" class="image-change" src="../../images/map.png">
             </div>
             <section>
                 <h2>reistijd</h2>
