@@ -6,6 +6,9 @@
 body {
     margin: 0 auto;
     font-family: proximanova,Arial;
+
+    /*overflow-x: hidden;*/
+    width: 100%;
 }
 
 /*todo er moet een grid komen vanaf pronkegevel want de makelaars adverientie zit op desktop rechts en dat moet zodat de gebruiker snel ziet */
@@ -24,8 +27,11 @@ header{
 }
 .menu-ul{
     display: none;
+/* todo   translate toevoegen dat die van boven naar beneden gaat de interactie*/
 }
-
+.menu-ul-open{
+    display: block;
+}
 .main-picture{
     width: 320px;
     position: relative;
