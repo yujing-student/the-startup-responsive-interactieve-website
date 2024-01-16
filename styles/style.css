@@ -12,7 +12,9 @@ body {
     font-family: proximanova, Arial;
     width: 100%;
 }
-
+*{
+    box-sizing: border-box;
+}
 /*https://brand.funda.nl/d/d9gw4zTPqYFU/brand-guide?#/basics-1/kleur*/
 /*general*/
 :root {
@@ -34,6 +36,7 @@ header {
     background-color: orange;
     position: relative;
     /*max-width: 100%;*/
+    width: 100%;
 }
 
 .log-funda {
@@ -42,7 +45,8 @@ header {
 
 .menu {
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
+    width: 100%;
 }
 
 .hamburger-icon {
@@ -67,7 +71,7 @@ header {
 }
 
 .main-picture {
-    width: 320px;
+    width: 300px;
     /*max-width: 480px;*/
 }
 
@@ -84,6 +88,7 @@ header {
     overflow-x: auto;
     display: flex;
     flex-direction: row;
+    width: 20em;
 }
 
 h2 {
@@ -226,6 +231,10 @@ table {
     .main-picture {
         width: 720px;
     }
+    .info-grid { /*sections*/
+
+        margin-inline: 2em;
+    }
 }
 
 @media (min-width: 992px) {
@@ -281,6 +290,7 @@ table {
         /*grid-area: 3 / 1;*/
         grid-row-start: 3;
         grid-column-start: 1;
+        margin-inline: 2em;
     }
 
     .broker-add {
