@@ -23,15 +23,16 @@ header{
     display: flex;
     justify-content: space-between;
 }
+.hamburger-icon{
+    position: relative;
+    left: 2em;
+    top: -1em;
+}
 .hamburger-icon:hover{
     background-color: #4bafef;
 }
 
-.menu-ul{
-    display: block;
-    /* todo   translate toevoegen dat die van boven naar beneden gaat de interactie*/
-    margin-top: -15em;
-}
+
 .menu-ul-open{
     display: block;
     margin-top: 0;
@@ -81,6 +82,11 @@ a{
 .open-description,.open-characterize{
     display: block;
 }
+dd{
+    position: relative;
+    left: 10em;
+    top: -1em;
+}
 
 table{
     border: solid #050542;
@@ -98,10 +104,21 @@ table{
     /*width: 10em;*/
 
 }
+@media (max-width: 580px){
+    .menu-ul{
+        display: block;
+        /* todo   translate toevoegen dat die van boven naar beneden gaat de interactie*/
+        margin-top: -15em;
+    }
+    .menu-ul-open{
+        display: block;
+        margin-top: 0;
+    }
+
+}
 
 
-
-@media (min-width: 480px)  {
+@media (min-width: 580px)  {
 
     .hamburger-icon{
         display: none;
