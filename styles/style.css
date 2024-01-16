@@ -41,7 +41,7 @@ header{
     width: 320px;
     /*max-width: 480px;*/
 }
-.images-next-to-main-images{
+.images-next-to-main-image{
     display: none;
     width: 150px;
 }
@@ -198,7 +198,7 @@ table{
         column-gap: 2em;
     }
 
-    .images-next-to-main-images{
+    .images-next-to-main-image{
         width: 200px;
         margin: 0 1em 1em 0;
     }
@@ -232,7 +232,7 @@ table{
         /*border: solid #050542;*/
         width: 35em;
     }
-    .images-next-to-main-images{
+    .images-next-to-main-image{
         display: block;
     }
 

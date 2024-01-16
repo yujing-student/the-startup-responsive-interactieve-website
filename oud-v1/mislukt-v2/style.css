@@ -37,7 +37,7 @@ header{
     position: relative;
     /*top: -0.8em;*/
 }
-.images-next-to-main-images{
+.images-next-to-main-image{
     display: none;
     width: 150px;
 }
@@ -141,7 +141,7 @@ table{
         /*border: solid #050542;*/
         width: 35em;
     }
-    .images-next-to-main-images{
+    .images-next-to-main-image{
         display: block;
     }
 
