@@ -94,7 +94,8 @@ table{
 .broker-add{
     background-color: red;
     height: 15em;
-    width: 25em;
+    width: 20em;
+    /*margin-left: 5em;*/
     grid-row: 1;
     grid-column: 2;
 }
@@ -224,7 +225,9 @@ table{
         display: grid;
         /*grid-area: 3 / 2;*/
         grid-row-start: 3;
-        grid-column-start: 2;
+        grid-column-start: 3;
+        margin-left: 0em;
+        margin-top: 3em;
         /*translate: 5em 15em;*/
     }
     /*specifieke elemeten*/
@@ -234,12 +237,13 @@ table{
     }
     .images-next-to-main-image{
         display: block;
+        width: 220px;
     }
 
     .main-picture {
         grid-column: 1;
         grid-row: 1 ;
-        width: 500px;
+        width: 484px;
     }
     .images-houses-2 {
         grid-column: 2 ;
