@@ -25,17 +25,19 @@
 </head>
 <body><!--https://dequeuniversity.com/screenreaders/-->
 <header>
+    <a href="https://www.funda.nl/koop/assendelft/huis-42349645-pronkgevel-1/">
     <img alt="logo funda" class="log-funda" src="images/fundawonen-logo.svg">
+    </a>
     <!--       <i class='bx bx-menu hamburger'></i>-->
     <button class="hamburger-icon" type="button"><img alt="menu icon" class="" src="images/menubar.png"></button>
     <nav class="menu">
 
         <ul class="menu-ul">
-            <li class="menu__li"><a href="#">kopen</a></li>
-            <li class="menu__li"><a href="#">huren</a></li>
-            <li class="menu__li"><a href="#">verkopen</a></li>
-            <li class="menu__li"><a href="#">Mijn huis</a></li>
-            <li class="menu__li"><img alt="login icon" src="images/log-in-regular-24.png"></li>
+            <li class="menu__li no-dot"><a href="#" class="menu-link">kopen</a></li>
+            <li class="menu__li no-dot"><a href="#" class="menu-link">huren</a></li>
+            <li class="menu__li no-dot"><a href="#" class="menu-link">verkopen</a></li>
+            <li class="menu__li no-dot"><a href="#" class="menu-link">Mijn huis</a></li>
+            <li class="menu__li no-dot"><img alt="login icon" src="images/log-in-regular-24.png"></li>
 
         </ul>
 
@@ -62,21 +64,21 @@
 
         <div class="grid-item carousel-grid" tabindex="0">
             <ul class="carousel-images">
-                <li>
+                <li class="no-dot">
                     <img alt="hoofdfoto" class="small-images-carousel" src="images/plattegrond.png">
-                    <p>plattegrond</p>
+                    <p><a href="#" class="general-link">plattegrond</a> </p>
                 </li>
-                <li>
+                <li class="no-dot">
                     <img alt="hoofdfoto" class="small-images-carousel" src="images/plattegrond.png">
-                    <p>360</p>
+                    <p><a href="#" class="general-link">360</a> </p>
                 </li>
-                <li>
+                <li class="no-dot">
                     <img alt="hoofdfoto" class="small-images-carousel" src="images/plattegrond.png">
-                    <p>video</p>
+                    <p><a href="#" class="general-link">video</a> </p>
                 </li>
-                <li>
+                <li class="no-dot">
                     <img alt="hoofdfoto" class="small-images-carousel" src="images/plattegrond.png">
-                    <p>47 fotos</p>
+                    <p><a href="#" class="general-link">47 fotos</a> </p>
                 </li>
             </ul>
         </div>
@@ -92,17 +94,21 @@
 
             <section class="price-house">
                 <h2>450.000 k.k</h2>
-                <p><a href="">Wat worden mijn maanlasten</a></p>
-                <p><a href="">contact met makelaar</a></p>
+                <p><a href="" class="general-link">Wat worden mijn maanlasten</a></p>
+                <p><a href="" class="general-link">contact met makelaar</a></p>
             </section>
-            <div class="buttons-to-go">
-                <p class="buttons-to-go__p-text">klik op de volgende knoppen naar het onderwerp te gaan</p>
-                <button class="buttons-to-go__button-style" type="button"><a href="#description">Omschrijving</a>
-                </button>
-                <button class="buttons-to-go__button-style" type="button"><a href="#characterize">kenmerken</a></button>
-                <button class="buttons-to-go__button-style" type="button"><a href="#transfer">overdracht</a></button>
-                <button class="buttons-to-go__button-style" type="button"><a href="#add-Home">waarde checken huis</a>
-                </button>
+            <div class="buttons-navigation">
+                <p class="buttons-navigation-text">klik op de volgende linkjes naar het onderwerp te gaan</p>
+                <ul>
+                    <li>     <button class="buttons-navigation-style" type="button"><a href="#description" class="general-link">Omschrijving</a>
+                    </button></li>
+                    <li><button class="buttons-navigation-style" type="button"><a href="#characterize" class="general-link">kenmerken</a></button></li>
+                    <li><button class="buttons-navigation-style" type="button"><a href="#transfer" class="general-link">overdracht</a></button></li>
+                    <li><button class="buttons-navigation-style" type="button"><a href="#add-Home" class="general-link">waarde checken huis</a>
+                    </button></li>
+                </ul>
+
+
             </div>
             <section>
                 <h2 id="description">Omschrijving</h2>

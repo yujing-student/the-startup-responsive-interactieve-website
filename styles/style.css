@@ -9,7 +9,21 @@ body {
     width: 100%;
     scroll-behavior: smooth;
 }
+/*https://brand.funda.nl/d/d9gw4zTPqYFU/brand-guide?#/basics-1/kleur*/
+/*general*/
+:root {
+    --blue: #0042B3;/*huisstijl #0071B3 orgineel*/
+    --white: #ffffff;
+    --orange:#F7A100;
+}
 
+.no-dot{
+    list-style-type: none;
+}
+.general-link{
+    text-decoration: none;
+    color: var(--blue);
+}
 
 header{
     background-color: orange;
@@ -27,11 +41,15 @@ header{
     position: relative;
     left: 2em;
     top: -1em;
+    background-color: var(--white);
 }
 .hamburger-icon:hover{
-    background-color: #4bafef;
+    background-color: var(--blue);
 }
-
+.menu-link{
+    color: white;
+    text-decoration: none;
+}
 
 .menu-ul-open{
     display: block;
@@ -58,23 +76,35 @@ h2 {
     border-bottom: 1px solid black; /* This adds a 2px solid black border under your h2 elements */
 }
 
-.buttons-to-go{
-    border: solid #050542;
-    /*width: 15em;*/
-}
-.buttons-to-go__p-text{
-    font-size: 1em;
-}
-.buttons-to-go__button-style{
-    font-size: 1em;
-    background-color: #5ac5e5;
+.buttons-navigation{
 
 }
+.buttons-navigation-text{
+    font-size: 1.2em;
+    text-decoration: none;
+}
+.buttons-navigation-style{/*4 buttons to next describe*/
+    font-size: 1em;
+    background-color: var(--white);
+    text-decoration: none;
+
+    border: 0;
+    line-height: 2.5;
+    text-align: center;
+    color: #fff;
+    /*text-shadow: 1 1px 1px #000;*/
+    border-radius: 10px;
+    /*background-color: rgba(220, 0, 0, 1);*/
+
+}
+
+
+
 a{
     scroll-behavior: smooth;
 }
-.buttons-to-go__button-style:hover{
-    background-color: orange;
+.general-link:hover{
+   text-decoration: underline;
 }
 .hide-description,.hide-characterize{
     display: none;
@@ -231,13 +261,13 @@ table{
         /*translate: 5em 15em;*/
     }
     /*specifieke elemeten*/
-    .buttons-to-go{
+    .buttons-navigation{
         /*border: solid #050542;*/
         width: 35em;
     }
     .images-next-to-main-image{
         display: block;
-        width: 220px;
+        width: 210px;
     }
 
     .main-picture {

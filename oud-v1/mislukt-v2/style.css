@@ -54,14 +54,14 @@ h2 {
         border-bottom: 1px solid black; /* This adds a 2px solid black border under your h2 elements */
     }
 
-.buttons-to-go{
+.buttons-navigation{
     border: solid #050542;
     /*width: 15em;*/
 }
-.buttons-to-go__p-text{
+.buttons-navigation-text{
     font-size: 1em;
 }
-.buttons-to-go__button-style{
+.buttons-navigation-style{
     font-size: 1em;
     background-color: orange;
 }
@@ -137,7 +137,7 @@ table{
 
 }
 @media screen and (min-width: 992px) {
-    .buttons-to-go{
+    .buttons-navigation{
         /*border: solid #050542;*/
         width: 35em;
     }
