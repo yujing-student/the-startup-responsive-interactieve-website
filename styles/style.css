@@ -105,6 +105,12 @@ h2 {
 
 }
 
+button:hover{
+    background-color: #8585ff;
+}button:active{
+    background-color: #75f584;
+}
+
 .buttons-navigation-text {
     font-size: 1.2em;
     text-decoration: none;
