@@ -143,6 +143,32 @@ dd {
 table {
     border: solid #050542;
 }
+th {
+    /*color: #FFFFFF;*/
+    /*background-color: var(--sidebar-color-white);*/
+    background-color: #fce8e8;
+    /*border: var(--border-color-line);*/
+    font-family: AvenirMedium;
+    /*border: 1px solid #dddddd; !*  hier word een randje meegegeven aan de th  *!*/
+    border: 0.15em solid;
+    font-size: 1em;
+    line-height: 1.5;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+
+
+}
+
+/*dit zijn de celblockej*/
+td, tr {
+    background-color: var(--white);
+    /*border: var(--border-color-line);*/
+    /*font-family: AvenirMedium;*/
+    border: 0.15em solid;
+    font-size: 1em;
+    line-height: 1.5;
+    /*margin: var(--margin-1em);*/
+    padding: 0.5em 0.5em 0.5em 0.5em;
+}
 
 .broker-add {
     background-color: red;
@@ -154,8 +180,8 @@ table {
 }
 
 .commercial-add {
-    background-color: orange;
-    height: 20em;
+    /*background-color: orange;*/
+    /*height: 20em;*/
     /*width: 10em;*/
 
 }
