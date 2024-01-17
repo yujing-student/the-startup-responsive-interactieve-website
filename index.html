@@ -241,14 +241,24 @@
                     <p tabindex="0">Krijg direct inzicht in de waarde en populariteit van je huis door je adres toe
                         te voegen in Mijn Huis.</p>
                     <div class="input-field-address">
-                        <label for="housnumber">geef je postcode</label><br>
+                        <div class="grid-input-field-postcode">
+                            <label for="housnumber" class="label-inputfield">geef je postcode</label>
+                            <input class="input-field" id="postcode" name="postcode" placeholder=""/>
 
-                        <input id="postcode" name="postcode" placeholder=""/>
-                        <label for="postcode"> huisnummmer</label>
-                        <input id="housnumber" name="housnumber" type="number"/>
-                        <label for="postcode"> toevoeging</label>
-                        <label for="add"></label><input class="disable-input" id="add" name="toevoeging" placeholder="number"
-                                                        type="number"/>
+                        </div>
+
+
+                        <div class="grid-input-field">
+                            <label class="label-inputfield" for="postcode"> huisnummmer</label>
+                        <input class="input-field" id="housnumber" name="housnumber" type="number"/>
+
+                        </div>
+
+                        <div class="grid-input-field">
+                            <label class="label-inputfield" for="add"> toevoeging</label>
+                            <input class="disable-input input-field" id="add" name="toevoeging" placeholder=""
+                                                            type="number"/>
+                        </div>
                     </div>
 
 

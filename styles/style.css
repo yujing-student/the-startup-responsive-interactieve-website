@@ -145,6 +145,15 @@ dd {
     margin-top: -2em;
     padding: 1em;
 }
+.input-field{
+    width: 10em;
+    /*margin-left: 10em;*/
+}
+.label-inputfield{
+    display: inline-block;
+    width: 140px;
+    text-align: right;
+}
 
 table {
     border: solid #050542;
@@ -205,8 +214,8 @@ td, tr {
         margin-top: 0;
     }
     .input-field-address{
-        display: grid;
-        grid-auto-rows: auto auto auto;
+        /*display: grid;*/
+        /*grid-auto-rows: auto auto auto;*/
     }
 
 
@@ -262,10 +271,11 @@ td, tr {
         max-width: 30em;
     }
     .input-field-address{
-        display: grid;
-        grid-column: auto auto;
-        grid-auto-rows: auto auto auto;
+        /*display: grid;*/
+        /*grid-column: auto;*/
+        /*grid-auto-rows: auto auto auto;*/
     }
+
 
 
 }
