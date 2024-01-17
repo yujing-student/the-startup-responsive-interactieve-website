@@ -124,7 +124,7 @@ h2 {
 .hide-description, .hide-characterize {
     display: none;
 }
-.search-button{
+.search-button,.checkvalue,.more-info-table,.send-email{
     font-size: 1em;
     background-color: #F8B73E;
     border-radius: 20px;
