@@ -38,6 +38,12 @@ header {
     /*max-width: 100%;*/
     width: 100%;
 }
+main{
+    margin-inline: 2em;
+}
+.info-grid{
+    margin-inline: 2em;
+}
 
 .log-funda {
     width: 150px;
@@ -171,12 +177,13 @@ td, tr {
 }
 
 .broker-add {
-    background-color: red;
+    /*background-color: red;*/
     height: 15em;
     width: 20em;
     /*margin-left: 5em;*/
     grid-row: 1;
     grid-column: 2;
+    margin-inline: 2em;
 }
 
 .commercial-add {
