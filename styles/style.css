@@ -204,6 +204,11 @@ td, tr {
         display: block;
         margin-top: 0;
     }
+    .input-field-address{
+        display: grid;
+        grid-auto-rows: auto auto auto;
+    }
+
 
 }
 
@@ -255,6 +260,11 @@ td, tr {
         flex-direction: row;
         justify-content: space-between;
         max-width: 30em;
+    }
+    .input-field-address{
+        display: grid;
+        grid-column: auto auto;
+        grid-auto-rows: auto auto auto;
     }
 
 

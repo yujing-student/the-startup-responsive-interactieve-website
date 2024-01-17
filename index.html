@@ -240,14 +240,17 @@
                     <h3>Wat is jouw huis waard?</h3>
                     <p tabindex="0">Krijg direct inzicht in de waarde en populariteit van je huis door je adres toe
                         te voegen in Mijn Huis.</p>
-                    <label for="housnumber">geef je postcode</label><br>
+                    <div class="input-field-address">
+                        <label for="housnumber">geef je postcode</label><br>
 
-                    <input id="postcode" name="postcode"/>
-                    <label for="postcode"> huisnummmer</label>
-                    <input id="housnumber" name="housnumber" type="number"/>
-                    <label for="postcode"> toevoeging</label>
-                    <label for="add"></label><input class="disable-input" id="add" name="toevoeging" placeholder="number"
-                                                    type="number"/>
+                        <input id="postcode" name="postcode" placeholder=""/>
+                        <label for="postcode"> huisnummmer</label>
+                        <input id="housnumber" name="housnumber" type="number"/>
+                        <label for="postcode"> toevoeging</label>
+                        <label for="add"></label><input class="disable-input" id="add" name="toevoeging" placeholder="number"
+                                                        type="number"/>
+                    </div>
+
 
                     <button type="button" class="checkvalue">check je waarde</button>
                 </section>
