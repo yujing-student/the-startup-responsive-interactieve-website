@@ -25,6 +25,7 @@ body {
 
 .no-dot {
     list-style-type: none;
+    margin-left: 1em;
 }
 
 .general-link {
@@ -40,6 +41,7 @@ header {
 }
 main{
     margin-inline: 2em;
+    margin-inline-end: 2em;
 }
 .info-grid{
     margin-inline: 2em;
@@ -106,10 +108,12 @@ h2 {
 }
 
 button:hover{
-    background-color: #8585ff;
+    background-color: #1cfaa4;
+    color: #111813;
 }button:active{
-    background-color: #75f584;
-}
+     background-color: #D8B1D8;
+     color: #000000;
+ }
 
 .buttons-navigation-text {
     font-size: 1.2em;
@@ -122,6 +126,7 @@ button:hover{
     border: 0;
     line-height: 2;
     color: var(--blue);
+    border-radius: 5em;
 }
 .general-link:hover {
     text-decoration: underline;
@@ -140,12 +145,14 @@ button:hover{
     color: #333333;
 }
 #kenmerk{
-   font-size: 1em;
+    font-size: 1em;
 }
 .open-description, .open-characterize {
     display: block;
 }
-
+dt{
+    border-top: 2px solid #dadada;
+}
 dd {
     margin-left: 10em;
     margin-top: -2em;
@@ -167,9 +174,8 @@ table {
 th {
     /*color: #FFFFFF;*/
     /*background-color: var(--sidebar-color-white);*/
-    background-color: #fce8e8;
+    /*background-color: var(--blue);*/
     /*border: var(--border-color-line);*/
-    font-family: AvenirMedium;
     /*border: 1px solid #dddddd; !*  hier word een randje meegegeven aan de th  *!*/
     border: 0.15em solid;
     font-size: 1em;
@@ -199,6 +205,15 @@ td, tr {
     grid-row: 1;
     grid-column: 2;
     margin-inline: 2em;
+}
+.images-broker,.image-change{
+    width: 300px;
+}
+.hide-telehponenumber{
+    display: none;
+}
+.open-telephonenumber{
+    display: block;
 }
 
 .commercial-add {
@@ -300,8 +315,9 @@ td, tr {
     /*grid elemetnen*/
     .gridcontainer {
         display: grid;
-        grid-template-columns: 35em 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto auto;
+        margin-top: 1em;
         /*gap: 10px;*/
         /*padding: 10px;*/
     }
@@ -336,6 +352,7 @@ td, tr {
         grid-template-columns: auto auto; /* 2fr for the main image, 1fr for the other images */
         grid-template-rows: auto auto;
         /*column-gap: 1em;*/
+        margin-left: -7em;
     }
 
     .carousel-grid { /*overflow plattegrond 60 video*/
@@ -356,11 +373,12 @@ td, tr {
         display: grid;
         /*grid-area: 3 / 2;*/
         grid-row-start: 3;
-        grid-column-start: 3;
+        /*grid-column-start: 3;*/
         margin-left: 0em;
         margin-top: 3em;
         /*translate: 5em 15em;*/
     }
+
 
     /*specifieke elemeten*/
     .buttons-navigation {
@@ -385,18 +403,21 @@ td, tr {
     }
 
     .images-houses-3 {
-        grid-column: 2;
+        grid-column: 1;
         grid-row: 2;
     }
 
     .images-houses-4 {
-        grid-column: 3;
+        grid-column: 1;
         grid-row: 1;
     }
 
     .images-houses-5 {
-        grid-column: 3;
+        grid-column: 2;
         grid-row: 2;
+    }
+    .images-houses-6,.images-houses-7{
+        display: none;
     }
 
     .container-info-broker {
@@ -410,4 +431,17 @@ td, tr {
         grid-row: 1;
     }
 
+}
+
+@media (min-width: 1300px) {
+    .images-houses-6,.images-houses-7{
+        display: grid;
+        grid-column: 3;
+        grid-row: 1;
+    }
+    .images-houses-7{
+        display: grid;
+        grid-column: 3;
+        grid-row: 2;
+    }
 }
