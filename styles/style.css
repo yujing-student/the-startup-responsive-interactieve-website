@@ -9,7 +9,7 @@ html {
 
 body {
     margin: 0 auto;
-    font-family: proximanova, Arial;
+    font-family: proximanova, sans-serif;
     width: 100%;
 }
 *{
@@ -41,7 +41,7 @@ header {
 }
 main{
 
-    margin: 0 2em 0em 2em;
+    margin: 0 2em 0 2em;
 }
 .gridconainer__info-grid{
     margin-inline: 2em;
@@ -262,7 +262,7 @@ td, tr {
     .menu {
         display: flex;
         flex-direction: row;
-        translate: 0em -4em;
+        translate: 0 -4em;
         justify-content: flex-end;
         /*!*margin: 0 5em 0em 10em;*!*/
         /*position: relative;*/
