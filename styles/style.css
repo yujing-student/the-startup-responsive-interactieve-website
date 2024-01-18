@@ -79,8 +79,11 @@ main{
 }
 
 .main-picture {
-    width: 300px;
-    /*max-width: 480px;*/
+    /*width: 100%;*/
+
+    /*height: 100%;*/
+    /*object-fit: cover;*/
+    max-width: 300px;
 }
 
 .gridcontainer__small-images__images-next-to-main-image {
@@ -284,7 +287,10 @@ td, tr {
     }
 
     .main-picture {
-        width: 380px;
+        width: 400px;
+        /*width: 100%;*/
+        /*height: 100%;*/
+        /*object-fit: cover;*/
     }
 
     .small-images-carousel {
@@ -309,7 +315,7 @@ td, tr {
 
 @media (min-width: 768px) {
     .main-picture {
-        width: 720px;
+        width: 300px;
     }
     .gridconainer__info-grid { /*sections*/
 
@@ -326,6 +332,7 @@ td, tr {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto auto;
         margin-top: 1em;
+        column-gap: 1em;
 
         /*gap: 10px;*/
         /*padding: 10px;*/
@@ -353,9 +360,9 @@ td, tr {
     .gridcontainer__small-images {
         display: grid;
         grid-template-columns: auto auto; /* 2fr for the main image, 1fr for the other images */
-        grid-template-rows: auto auto;
+        grid-template-rows: auto auto auto;
         /*column-gap: 1em;*/
-        margin-left: -7em;
+        margin-left: -3em;
     }
 
     .carousel-grid { /*overflow plattegrond 60 video*/
@@ -392,13 +399,20 @@ td, tr {
 
     .gridcontainer__small-images__images-next-to-main-image {
         display: block;
-        width: 210px;
+        /*width: 100%;*/
+        /*height: 100%;*/
+        width: 200px;
+        /*object-fit: cover;*/
+        margin-left: 1em;
     }
 
     .main-picture {
         grid-column: 1;
         grid-row: 1;
-        width: 484px;
+        width: 300px;
+        /*width: 80%;*/
+        /*height: 100%;*/
+
     }
 
     .images-houses-2 {
@@ -421,7 +435,14 @@ td, tr {
         grid-row: 2;
     }
     .images-houses-6,.images-houses-7{
-        display: none;
+        display: grid;
+        grid-column: 2;
+        grid-row: 3;
+    }
+    .images-houses-7{
+        display: grid;
+        grid-column: 1;
+        grid-row: 3;
     }
 
 
@@ -432,7 +453,7 @@ td, tr {
 
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1400px) {
     .images-houses-6,.images-houses-7{
         display: grid;
         grid-column: 3;
