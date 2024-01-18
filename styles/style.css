@@ -96,7 +96,7 @@ main{
     overflow-x: auto;
     display: flex;
     flex-direction: row;
-    width: 20em;
+    /*width: 20em;*/
 }
 
 h2 {
