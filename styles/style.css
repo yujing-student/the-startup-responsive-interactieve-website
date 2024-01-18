@@ -21,6 +21,7 @@ body {
     --blue: #0042B3; /*huisstijl #0071B3 orgineel*/
     --white: #ffffff;
     --orange: #F7A100;
+    --black: #333333
 }
 
 .carousel-images__no-dot {
@@ -36,6 +37,7 @@ body {
 header {
     background-color: orange;
     position: relative;
+    color: #1A1A1A;
     /*max-width: 100%;*/
     width: 100%;
 }
@@ -69,7 +71,7 @@ main{
 }
 
 .menu-link {
-    color: white;
+    color: #1A1A1A;
     text-decoration: none;
 }
 
@@ -107,8 +109,8 @@ h2 {
 }
 
 button:hover{
-    background-color: #1cfaa4;
-    color: #111813;
+    background-color: #185477;
+    color: var(--white);
 }button:active{
      background-color: #D8B1D8;
      color: #000000;
