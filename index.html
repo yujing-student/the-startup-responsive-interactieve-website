@@ -4,77 +4,58 @@
     <meta charset="UTF-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="detailpagina funda" name="description">
-
-    <!-- Link to CSS -->
-    <link href="styles/style.css" rel="stylesheet" type="text/css">
-
-    <!-- Link to boxicons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-
-    <!-- Link to JavaScript script -->
-
+    <meta content="detailpagina funda" name="description"><!-- Link to CSS -->
+    <link href="styles/style.css" rel="stylesheet" type="text/css"><!-- Link to boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'><!-- Link to JavaScript script -->
     <script defer src="scripts/v2.js">
 
-    </script>
-    <!--geen defer vanwege error in w3c validator-->
-
+    </script><!--geen defer vanwege error in w3c validator-->
     <title>Detailpagina</title>
-    <!--    hier werkt de rode knp weer niet oorzaak niet bekend-->
 </head>
 <body><!--https://dequeuniversity.com/screenreaders/-->
 <header>
     <a href="https://www.funda.nl/koop/assendelft/huis-42349645-pronkgevel-1/">
         <img alt="logo funda" class="log-funda" src="images/fundawonen-logo.svg">
     </a>
-    <!--       <i class='bx bx-menu hamburger'></i>-->
     <button class="hamburger-icon" type="button"><img alt="menu icon" class="" src="images/menubar.png"></button>
     <nav class="menu">
 
         <ul class="menu-ul">
-            <li class="menu__li carousel-images__no-dot"><a href="#" class="menu-link">kopen</a></li>
-            <li class="menu__li carousel-images__no-dot"><a href="#" class="menu-link">huren</a></li>
-            <li class="menu__li carousel-images__no-dot"><a href="#" class="menu-link">verkopen</a></li>
-            <li class="menu__li carousel-images__no-dot"><a href="#" class="menu-link">Mijn huis</a></li>
+            <li class="menu__li carousel-images__no-dot"><a class="menu-link" href="#">kopen</a></li>
+            <li class="menu__li carousel-images__no-dot"><a class="menu-link" href="#">huren</a></li>
+            <li class="menu__li carousel-images__no-dot"><a class="menu-link" href="#">verkopen</a></li>
+            <li class="menu__li carousel-images__no-dot"><a class="menu-link" href="#">Mijn huis</a></li>
             <li class="menu__li carousel-images__no-dot"><img alt="login icon" src="images/log-in-regular-24.png"></li>
 
         </ul>
 
     </nav>
 </header>
-
-
 <main>
     <div class="gridcontainer">
-
-
         <div class=" gridcontainer__grid-item gridcontaienr__five-images-grid">
             <img alt="hoofdfoto huis" class="main-picture images-houses-1" src="images/hoofdfoto.jpg">
         </div>
-
-
         <div class="gridcontainer__grid-item carousel-grid" tabindex="0">
             <ul class="carousel-images">
                 <li class="carousel-images__no-dot">
                     <img alt="hoofdfoto" class="small-images-carousel" src="images/plattegrond.png">
-                    <p><a href="#" class="general-link">plattegrond</a> </p>
+                    <p><a class="general-link" href="#">plattegrond</a></p>
                 </li>
                 <li class="carousel-images__no-dot">
                     <img alt="hoofdfoto" class="small-images-carousel" src="images/small-images/playground.jpg">
-                    <p><a href="#" class="general-link">360</a> </p>
+                    <p><a class="general-link" href="#">360</a></p>
                 </li>
                 <li class="carousel-images__no-dot">
                     <img alt="hoofdfoto" class="small-images-carousel" src="images/small-images/front-houose.jpg">
-                    <p><a href="#" class="general-link">video</a> </p>
+                    <p><a class="general-link" href="#">video</a></p>
                 </li>
                 <li class="carousel-images__no-dot">
                     <img alt="hoofdfoto" class="small-images-carousel" src="images/small-images/frontdoor.jpg">
-                    <p><a href="#" class="general-link">47 fotos</a> </p>
+                    <p><a class="general-link" href="#">47 fotos</a></p>
                 </li>
             </ul>
         </div>
-
         <div class="gridconainer__info-grid gridcontainer__grid-item"><!--titel kijrgen-->
             <section class="info-house" tabindex="0">
                 <h1>pronkgevel1</h1>
@@ -86,8 +67,8 @@
 
             <section class="price-house">
                 <h2>450.000 k.k</h2>
-                <p><a href="" class="general-link">Wat worden mijn maanlasten</a></p>
-                <p><a href="#broker" class="general-link contact-broker">contact met makelaar</a></p>
+                <p><a class="general-link" href="">Wat worden mijn maanlasten</a></p>
+                <p><a class="general-link contact-broker" href="#broker">contact met makelaar</a></p>
             </section>
             <div class="buttons-navigation">
                 <p class="buttons-navigation-text">Klik op de volgende linkjes naar het onderwerp te gaan</p>
@@ -100,10 +81,10 @@
                 <!--                    </button></li>-->
                 <!--                </ul>-->
                 <ul>
-                    <li><a href="#description" class="buttons-navigation-style general-link">Omschrijving</a></li>
-                    <li><a href="#characterize" class="buttons-navigation-style general-link">kenmerken</a></li>
-                    <li><a href="#transfer" class="buttons-navigation-style general-link">overdracht</a></li>
-                    <li><a href="#add-Home" class="buttons-navigation-style general-link">Waarde checken huis</a></li>
+                    <li><a class="buttons-navigation-style general-link" href="#description">Omschrijving</a></li>
+                    <li><a class="buttons-navigation-style general-link" href="#characterize">kenmerken</a></li>
+                    <li><a class="buttons-navigation-style general-link" href="#transfer">overdracht</a></li>
+                    <li><a class="buttons-navigation-style general-link" href="#add-Home">Waarde checken huis</a></li>
                 </ul>
 
 
@@ -171,7 +152,7 @@
                         <label for="kenmerk">zoek op kenmerken</label>
                         <label for="kenmerk"></label><input id="kenmerk" name="q" placeholder="zoeken kenmerken"
                                                             type="search"/>
-                        <button type="submit" class="search-button">Zoeken</button>
+                        <button class="search-button" type="submit">Zoeken</button>
                     </form>
                 </search>
             </section>
@@ -240,7 +221,7 @@
                         te voegen in Mijn Huis.</p>
                     <div class="input-field-address">
                         <div class="grid-input-field-postcode">
-                            <label for="housnumber" class="label-inputfield">geef je postcode</label>
+                            <label class="label-inputfield" for="housnumber">geef je postcode</label>
                             <input class="input-field" id="postcode" name="postcode" placeholder=""/>
 
                         </div>
@@ -260,7 +241,7 @@
                     </div>
 
 
-                    <button type="button" class="checkvalue">check je waarde</button>
+                    <button class="checkvalue" type="button">check je waarde</button>
                 </section>
             </div>
             <div>
@@ -299,7 +280,7 @@
 
                     </tbody>
                 </table>
-                <button type="button" class="button-show-charactize">meer over</button>
+                <button class="button-show-charactize" type="button">meer over</button>
 
             </div>
 
@@ -322,22 +303,33 @@
             <ul class="gridcontainer__small-images">
 
 
-            <li class="carousel-images__no-dot">
-                <img alt="hoofdfoto huis" class="gridcontainer__small-images__images-next-to-main-image images-houses-2"
-                     src="images/eettafel.jpg">
-            </li>
-            <li class="carousel-images__no-dot"> <img alt="hoofdfoto huis" class="gridcontainer__small-images__images-next-to-main-image images-houses-3" src="images/woonkamer.jpg">   </li>
-            <li class="carousel-images__no-dot"> <img alt="hoofdfoto huis" class="gridcontainer__small-images__images-next-to-main-image images-houses-4" src="images/tuin.jpg">   </li>
-            <li class="carousel-images__no-dot"> <img alt="hoofdfoto huis" class="gridcontainer__small-images__images-next-to-main-image images-houses-5" src="images/video.jpg">   </li>
-            <li class="carousel-images__no-dot"> <img alt="hoofdfoto huis" class="gridcontainer__small-images__images-next-to-main-image images-houses-6" src="images/stairs.jpg">   </li>
-            <li class="carousel-images__no-dot"> <img alt="hoofdfoto huis" class="gridcontainer__small-images__images-next-to-main-image images-houses-7" src="images/street.jpg">   </li>
+                <li class="carousel-images__no-dot">
+                    <img alt="hoofdfoto huis"
+                         class="gridcontainer__small-images__images-next-to-main-image images-houses-2"
+                         src="images/eettafel.jpg">
+                </li>
+                <li class="carousel-images__no-dot"><img alt="hoofdfoto huis"
+                                                         class="gridcontainer__small-images__images-next-to-main-image images-houses-3"
+                                                         src="images/woonkamer.jpg"></li>
+                <li class="carousel-images__no-dot"><img alt="hoofdfoto huis"
+                                                         class="gridcontainer__small-images__images-next-to-main-image images-houses-4"
+                                                         src="images/tuin.jpg"></li>
+                <li class="carousel-images__no-dot"><img alt="hoofdfoto huis"
+                                                         class="gridcontainer__small-images__images-next-to-main-image images-houses-5"
+                                                         src="images/video.jpg"></li>
+                <li class="carousel-images__no-dot"><img alt="hoofdfoto huis"
+                                                         class="gridcontainer__small-images__images-next-to-main-image images-houses-6"
+                                                         src="images/stairs.jpg"></li>
+                <li class="carousel-images__no-dot"><img alt="hoofdfoto huis"
+                                                         class="gridcontainer__small-images__images-next-to-main-image images-houses-7"
+                                                         src="images/street.jpg"></li>
             </ul>
         </div>
         <div class="broker-add gridcontainer__grid-item">
 
             <p id="broker">Advertentie makelaar</p>
-            <img src="images/makelaar.png" alt="makelaar" class="images-broker">
-            <button  type="submit" class="send-email">stuur een email</button>
+            <img alt="makelaar" class="images-broker" src="images/makelaar.png">
+            <button class="send-email" type="submit">stuur een email</button>
             <p class="telephonumber">toon telefoonnummer</p>
             <p class="hide-telehponenumber">Bel 075-6218928</p>
             <div class="commercial-add">
@@ -347,9 +339,7 @@
     </div>
 </main>
 <footer>
-
 </footer>
-
 </body>
 </html>
 
