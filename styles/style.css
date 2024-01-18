@@ -311,7 +311,7 @@ td, tr {
 
 @media (min-width: 768px) {
     .main-picture {
-        width: 500px;
+        width: 680px;
         /*width: 100%;*/
         /*height: 100%;*/
         /*object-fit: scale-down;*/
@@ -329,7 +329,7 @@ td, tr {
     .gridcontainer {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto auto;
+        grid-template-rows: auto auto auto auto;
         margin-top: 1em;
         column-gap: 1em;
 
@@ -349,6 +349,9 @@ td, tr {
         grid-column-start: 1;
         grid-column-end: 2;
     }
+    .gridconainer__small-images-div{
+        margin-left: -11em;
+    }
 
 
     .gridcontainer__small-images__images-next-to-main-image {
@@ -356,12 +359,13 @@ td, tr {
         margin: 0 1em 1em 0;
     }
 
+
     .gridcontainer__small-images {
         display: grid;
         grid-template-columns: auto auto; /* 2fr for the main image, 1fr for the other images */
         grid-template-rows: auto auto auto;
         /*column-gap: 1em;*/
-        margin-left: -13em;
+        /*margin-left: -13em;*/
     }
 
     .carousel-grid { /*overflow plattegrond 60 video*/
@@ -451,6 +455,15 @@ td, tr {
 }
 
 @media (min-width: 1400px) {
+    .main-picture{
+        width: 700px;
+    }
+    .gridconainer__small-images-div{
+        margin-left: -5em;
+    }
+    .gridcontainer__small-images{
+      margin-left: 0;
+    }
     .images-houses-6,.images-houses-7{
         display: grid;
         grid-column: 3;
