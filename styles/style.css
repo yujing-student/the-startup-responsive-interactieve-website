@@ -79,11 +79,7 @@ main{
 }
 
 .main-picture {
-    /*width: 100%;*/
-
-    /*height: 100%;*/
-    /*object-fit: cover;*/
-    max-width: 300px;
+    width: 300px;
 }
 
 .gridcontainer__small-images__images-next-to-main-image {
@@ -315,7 +311,10 @@ td, tr {
 
 @media (min-width: 768px) {
     .main-picture {
-        width: 300px;
+        width: 500px;
+        /*width: 100%;*/
+        /*height: 100%;*/
+        /*object-fit: scale-down;*/
     }
     .gridconainer__info-grid { /*sections*/
 
@@ -362,7 +361,7 @@ td, tr {
         grid-template-columns: auto auto; /* 2fr for the main image, 1fr for the other images */
         grid-template-rows: auto auto auto;
         /*column-gap: 1em;*/
-        margin-left: -3em;
+        margin-left: -13em;
     }
 
     .carousel-grid { /*overflow plattegrond 60 video*/
@@ -407,11 +406,9 @@ td, tr {
     }
 
     .main-picture {
-        grid-column: 1;
-        grid-row: 1;
-        width: 300px;
-        /*width: 80%;*/
+        /*width: 100%;*/
         /*height: 100%;*/
+        /*object-fit: cover;*/
 
     }
 
