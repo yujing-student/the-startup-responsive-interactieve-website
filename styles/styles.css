@@ -248,8 +248,6 @@ th {
 /*dit zijn de celblockej*/
 td, tr {
     background-color: var(--white);
-    /*border: var(--border-color-line);*/
-    /*font-family: AvenirMedium;*/
     border: 0.15em solid;
     font-size: 1em;
     line-height: 1.5;
@@ -259,8 +257,6 @@ td, tr {
 
 .broker-add {
     display: grid;
-    /*grid-template-rows: auto auto auto;*/
-    /*row-gap: 1em;*/
 }
 
 .send-email, .checkvalue, .full-description, .button-show-charactize {
