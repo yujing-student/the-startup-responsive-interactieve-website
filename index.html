@@ -37,50 +37,50 @@
 <!--todo aria toevoegen-->
 <main class=""><!--gridcontainer-->
 
-    <div class="images-grid-container">
-        <section class=" gridcontainer__grid-item gridcontaienr__five-images-grid"><!--hoofdumages en tekst-->
-            <h1>Foto's over het huis</h1>
+    <div class="">
+        <div class=" gridcontainer__grid-item gridcontaienr__five-images-grid"><!--hoofdumages en tekst-->
             <img alt="hoofdfoto huis" class="main-picture images-houses-1" src="images/hoofdfoto.jpg">
-            <ul class="carousel-images">
+            <ul class="gridcontainer__small-images">
                 <li class="carousel-images__no-dot">
-                    <img alt="plattgrond" class="small-images-carousel" src="images/plattegrond.png">
-                    <p><a class="general-link" href="#">plattegrond</a></p>
+                    <img alt="hoofdfoto huis"
+                         class="gridcontainer__small-images_carousel-images images-houses-dining-room"
+                         src="images/eettafel.jpg">
                 </li>
-                <li class="carousel-images__no-dot">
-                    <img alt="360 view" class="small-images-carousel" src="images/small-images/playground.jpg">
-                    <p><a class="general-link" href="#">360</a></p>
-                </li>
-                <li class="carousel-images__no-dot">
-                    <img alt="video" class="small-images-carousel" src="images/small-images/front-houose.jpg">
-                    <p><a class="general-link" href="#">video</a></p>
-                </li>
-                <li class="carousel-images__no-dot">
-                    <img alt="alle foto's" class="small-images-carousel" src="images/small-images/frontdoor.jpg">
-                    <p><a class="general-link" href="#">47 fotos</a></p>
-                </li>
+                <li class="carousel-images__no-dot"><img alt="woonkamer"
+                                                         class="gridcontainer__small-images_carousel-images livingroom"
+                                                         src="images/woonkamer.jpg"></li>
+                <li class="carousel-images__no-dot"><img alt="garden"
+                                                         class="gridcontainer__small-images_carousel-images images-houses-garden"
+                                                         src="images/tuin.jpg"></li>
+                <li class="carousel-images__no-dot"><img alt="video van het huis"
+                                                         class="gridcontainer__small-images_carousel-images images-houses-video"
+                                                         src="images/video.jpg"></li>
+                <li class="carousel-images__no-dot"><img alt="gamg met trappen"
+                                                         class="gridcontainer__small-images_carousel-images images-houses-stairs"
+                                                         src="images/stairs.jpg"></li>
+                <li class="carousel-images__no-dot"><img alt="straat van het huis"
+                                                         class="gridcontainer__small-images_carousel-images images-houses-street"
+                                                         src="images/street.jpg"></li>
             </ul>
-        </section>
-        <ul class="gridcontainer__small-images">
+        </div>
+
+        <ul class="carousel-images">
             <li class="carousel-images__no-dot">
-                <img alt="hoofdfoto huis"
-                     class="gridcontainer__small-images_carousel-images images-houses-dining-room"
-                     src="images/eettafel.jpg">
+                <img alt="plattgrond" class="small-images-carousel" src="images/plattegrond.png">
+                <p><a class="general-link" href="#">plattegrond</a></p>
             </li>
-            <li class="carousel-images__no-dot"><img alt="woonkamer"
-                                                     class="gridcontainer__small-images_carousel-images livingroom"
-                                                     src="images/woonkamer.jpg"></li>
-            <li class="carousel-images__no-dot"><img alt="garden"
-                                                     class="gridcontainer__small-images_carousel-images images-houses-garden"
-                                                     src="images/tuin.jpg"></li>
-            <li class="carousel-images__no-dot"><img alt="video van het huis"
-                                                     class="gridcontainer__small-images_carousel-images images-houses-video"
-                                                     src="images/video.jpg"></li>
-            <li class="carousel-images__no-dot"><img alt="gamg met trappen"
-                                                     class="gridcontainer__small-images_carousel-images images-houses-stairs"
-                                                     src="images/stairs.jpg"></li>
-            <li class="carousel-images__no-dot"><img alt="straat van het huis"
-                                                     class="gridcontainer__small-images_carousel-images images-houses-street"
-                                                     src="images/street.jpg"></li>
+            <li class="carousel-images__no-dot">
+                <img alt="360 view" class="small-images-carousel" src="images/small-images/playground.jpg">
+                <p><a class="general-link" href="#">360</a></p>
+            </li>
+            <li class="carousel-images__no-dot">
+                <img alt="video" class="small-images-carousel" src="images/small-images/front-houose.jpg">
+                <p><a class="general-link" href="#">video</a></p>
+            </li>
+            <li class="carousel-images__no-dot">
+                <img alt="alle foto's" class="small-images-carousel" src="images/small-images/frontdoor.jpg">
+                <p><a class="general-link" href="#">47 fotos</a></p>
+            </li>
         </ul>
     </div>
 
@@ -267,6 +267,13 @@
     </article>
 
     <h2>buurt</h2>
+    <div class="grid-container-neighbor">
+        <span>waterrijk</span>
+        <span>inwoners</span>
+        <span>w5610</span>
+        <span>Gezin met kinderen</span>
+        <span>55%</span>
+    </div>
     <table><!--dit proberen met grid te maken-->
         <thead>
         <tr>

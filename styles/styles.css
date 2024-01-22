@@ -231,7 +231,10 @@ dd {
     justify-content: space-between;
     width: 200px;
 }
+.grid-container-neighbor{
+    display: grid;
 
+}
 table {
     border: solid #050542;
 }
@@ -444,6 +447,11 @@ td, tr {
 
 
     }
+    .gridcontaienr__five-images-grid{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto auto;
+    }
 
     /*.hamburger-icon {*/
     /*    display: none;*/
@@ -492,11 +500,11 @@ td, tr {
 
 
 
-    .images-grid-container {
-        display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: auto auto;
-    }
+    /*.images-grid-container {*/
+    /*    display: grid;*/
+    /*    grid-template-rows: auto;*/
+    /*    grid-template-columns: auto auto;*/
+    /*}*/
 
     .gridcontainer__small-images {
         display: grid;
