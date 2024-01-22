@@ -543,12 +543,13 @@ td, tr {
     }
 
     .general-information-page {
-        margin-top: -5em;
+        margin-top: -8em;
     }
 
-    .grid-broker-price {
+    .general-information-page {
         display: grid;
         grid-template-columns: 58% 1fr;
+        grid-template-rows: 11em;
 
     }
 
@@ -702,6 +703,9 @@ td, tr {
     .grid-broker-price {
         display: grid;
         grid-template-columns: 65% 1fr;
+        grid-template-rows: 11em;
+
+
 
     }
 
