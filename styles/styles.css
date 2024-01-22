@@ -84,7 +84,7 @@ main {
     width: 280px;
 }
 
-.gridcontainer__small-images__images-next-to-main-image {
+.gridcontainer__small-images_carousel-images {
     display: none;
     width: 150px;
 }
@@ -302,8 +302,8 @@ td, tr {
 
 }
 
-
-@media (min-width: 580px) and (max-width: 768px) {
+/* and (max-width: 768px)*/
+@media (min-width: 580px) {
     main {
         display: grid;
         align-content: center;
@@ -363,130 +363,134 @@ td, tr {
         border-bottom: 1px solid black; /* This adds a 2px solid black border under your h2 elements */
         /*border-width: 5em;*/
     }
-
-
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-    main {
-        display: grid;
-        align-content: center;
-    }
-
-    .hamburger-icon {
-        display: none;
-    }
-
-    header {
-        height: 5em;
-    }
-
-    .menu {
-        display: flex;
-        flex-direction: row;
-        translate: 0 -4em;
-        justify-content: flex-end;
-        /*!*margin: 0 5em 0em 10em;*!*/
-        /*position: relative;*/
-        /*top: -4.5em;*/
-        /*left: 8em;*/
-        /*height: 0;*/
-    }
-
-    .menu-ul {
-        display: flex;
-        flex-direction: row;
-        /*display: flex;*/
-        /*flex-direction: row;*/
-        /*align-items: center;*/
-    }
-
-    .menu__li {
-        margin: 1em;
-    }
-
-    .main-picture {
-        width: 680px;
-        /*width: 100%;*/
-        /*height: 100%;*/
-        /*object-fit: scale-down;*/
-    }
-
-    .carousel-images {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        max-width: 30em;
-    }
-
-    h2 {
-        border-bottom: 1px solid black; /* This adds a 2px solid black border under your h2 elements */
-        /*border-width: 5em;*/
-    }
-
-    .small-images-carousel {
-        display: none;
-    }
-
-
-}
-
-@media (min-width: 992px) and (max-width: 1300px) {
-    main {
-        position: absolute;
-        left: calc(54% - 50px);
-        transform: translate(-50%, 0%);
-    }
-
-    .hamburger-icon {
-        display: none;
-    }
-
-    header {
-        height: 5em;
-    }
-
-    .menu {
-        display: flex;
-        flex-direction: row;
-        translate: 0 -4em;
-        justify-content: flex-end;
-
-    }
-
-    .menu-ul {
-        display: flex;
-        flex-direction: row;
-
-    }
-
-    .menu__li {
-        margin: 1em;
-    }
-
-    .main-picture {
-        width: 544px;
-        /*width: 100%;*/
-        /*height: 100%;*/
-        /*object-fit: scale-down;*/
-    }
-
-    .carousel-images {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        max-width: 30em;
-    }
-
-    .small-images-carousel {
-        display: none;
-    }
-
     dt {
         border-top: 2px solid #dadada;
         width: 35em;
 
     }
+
+
+}
+/*and (max-width: 992px)*/
+/*@media (min-width: 768px)  {*/
+/*    main {*/
+/*        display: grid;*/
+/*        align-content: center;*/
+/*    }*/
+
+/*    .hamburger-icon {*/
+/*        display: none;*/
+/*    }*/
+
+/*    header {*/
+/*        height: 5em;*/
+/*    }*/
+
+/*    .menu {*/
+/*        display: flex;*/
+/*        flex-direction: row;*/
+/*        translate: 0 -4em;*/
+/*        justify-content: flex-end;*/
+/*        !*!*margin: 0 5em 0em 10em;*!*!*/
+/*        !*position: relative;*!*/
+/*        !*top: -4.5em;*!*/
+/*        !*left: 8em;*!*/
+/*        !*height: 0;*!*/
+/*    }*/
+
+/*    .menu-ul {*/
+/*        display: flex;*/
+/*        flex-direction: row;*/
+/*        !*display: flex;*!*/
+/*        !*flex-direction: row;*!*/
+/*        !*align-items: center;*!*/
+/*    }*/
+
+/*    .menu__li {*/
+/*        margin: 1em;*/
+/*    }*/
+
+/*    .main-picture {*/
+/*        width: 680px;*/
+/*        !*width: 100%;*!*/
+/*        !*height: 100%;*!*/
+/*        !*object-fit: scale-down;*!*/
+/*    }*/
+
+/*    .carousel-images {*/
+/*        display: flex;*/
+/*        flex-direction: row;*/
+/*        justify-content: space-between;*/
+/*        max-width: 30em;*/
+/*    }*/
+
+/*    h2 {*/
+/*        border-bottom: 1px solid black; !* This adds a 2px solid black border under your h2 elements *!*/
+/*        !*border-width: 5em;*!*/
+/*    }*/
+
+/*    .small-images-carousel {*/
+/*        display: none;*/
+/*    }*/
+
+
+/*}*/
+
+@media (min-width: 992px)  {
+    main {
+        position: absolute;
+        left: calc(54% - 50px);
+        transform: translate(-50%, 0%);
+
+
+    }
+
+    /*.hamburger-icon {*/
+    /*    display: none;*/
+    /*}*/
+
+    /*header {*/
+    /*    height: 5em;*/
+    /*}*/
+
+    /*.menu {*/
+    /*    display: flex;*/
+    /*    flex-direction: row;*/
+    /*    translate: 0 -4em;*/
+    /*    justify-content: flex-end;*/
+
+    /*}*/
+
+    /*.menu-ul {*/
+    /*    display: flex;*/
+    /*    flex-direction: row;*/
+
+    /*}*/
+
+    /*.menu__li {*/
+    /*    margin: 1em;*/
+    /*}*/
+
+    /*.main-picture {*/
+    /*    width: 544px;*/
+    /*    !*width: 100%;*!*/
+    /*    !*height: 100%;*!*/
+    /*    !*object-fit: scale-down;*!*/
+    /*}*/
+
+    /*.carousel-images {*/
+    /*    display: flex;*/
+    /*    flex-direction: row;*/
+    /*    justify-content: space-between;*/
+    /*    max-width: 30em;*/
+    /*}*/
+
+    /*.small-images-carousel {*/
+    /*    display: none;*/
+    /*}*/
+
+
+
 
     .images-grid-container {
         display: grid;
@@ -500,10 +504,11 @@ td, tr {
         grid-template-rows: auto auto auto;
         margin-right: 5em;
     }
-
-    .gridcontainer__small-images__images-next-to-main-image {
+    .gridcontainer__small-images_carousel-images {
         display: block;
     }
+
+
 
     .images-houses-dining-room {
         grid-row: 1;
@@ -515,37 +520,45 @@ td, tr {
         grid-column: 2;
     }
 
-    .images-houses-3 {
+    .livingroom {
         grid-row: 3;
         grid-column: 3;
     }
 
-    .images-houses-4 {
+    .images-houses-garden {
 
     }
 
-    .images-houses-5 {
+    .images-houses-video {
 
     }
 
-    .images-houses-6 {
+    .images-houses-stairs {
 
     }
 
-    h2 {
-        border-bottom: 1px solid black; /* This adds a 2px solid black border under your h2 elements */
-        /*border-width: 5em;*/
-        width: 100%;
-    }
+    /*h2 {*/
+    /*    border-bottom: 1px solid black; !* This adds a 2px solid black border under your h2 elements *!*/
+    /*    !*border-width: 5em;*!*/
+    /*    width: 100%;*/
+    /*}*/
 
-    .general-information-page {
-        margin-top: -8em;
-    }
+    /*.general-information-page {*/
+    /*    margin-top: -8em;*/
+    /*}*/
 
-    .general-information-page {
+    /*.general-information-page {*/
+    /*    display: grid;*/
+    /*    grid-template-columns: 58% 1fr;*/
+    /*    grid-template-rows: 11em;*/
+
+    /*}*/
+    .grid-broker-price {
         display: grid;
-        grid-template-columns: 58% 1fr;
+        grid-template-columns: 55% 1fr;
         grid-template-rows: 11em;
+
+
 
     }
 
@@ -560,159 +573,28 @@ td, tr {
         /*margin-left: 60%; !* Adjust this to move the .broker-add section more to the right *!*/
     }
 
-    .contact-broker {
-        display: none;
-    }
+    /*.contact-broker {*/
+    /*    display: none;*/
+    /*}*/
 
 
-    .gridconainer__info-grid {
-        display: block;
-    }
+    /*.gridconainer__info-grid {*/
+    /*    display: block;*/
+    /*}*/
 
 }
-
-@media (min-width: 1300px) {
+@media (min-width: 1300px){
     main {
         position: absolute;
-        left: calc(50% - 50px);
+        left: calc(55% - 50px);
         transform: translate(-50%, 0%);
-    }
 
-    .hamburger-icon {
-        display: none;
-    }
-
-    header {
-        height: 5em;
-    }
-
-    .menu {
-        display: flex;
-        flex-direction: row;
-        translate: 0 -4em;
-        justify-content: flex-end;
-        /*!*margin: 0 5em 0em 10em;*!*/
-        /*position: relative;*/
-        /*top: -4.5em;*/
-        /*left: 8em;*/
-        /*height: 0;*/
-    }
-
-    .menu-ul {
-        display: flex;
-        flex-direction: row;
-        /*display: flex;*/
-        /*flex-direction: row;*/
-        /*align-items: center;*/
-    }
-
-    .menu__li {
-        margin: 1em;
-    }
-
-    .main-picture {
-        width: 680px;
-        /*width: 100%;*/
-        /*height: 100%;*/
-        /*object-fit: scale-down;*/
-    }
-
-    .carousel-images {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        max-width: 30em;
-    }
-
-    .small-images-carousel {
-        display: none;
-    }
-
-    .images-grid-container {
-        display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: auto auto;
-    }
-
-    .gridcontainer__small-images {
-        display: grid;
-        grid-template-columns: 10em 10em;
-        grid-template-rows: auto auto auto;
-        margin-right: 5em;
-    }
-
-    .gridcontainer__small-images__images-next-to-main-image {
-        display: block;
-    }
-
-    .images-houses-dining-room {
-        grid-row: 1;
-        grid-column: 1;
-    }
-
-    .images-houses-2 {
-        grid-row: 2;
-        grid-column: 2;
-    }
-
-    .images-houses-3 {
-        grid-row: 3;
-        grid-column: 3;
-    }
-
-    .images-houses-4 {
+        /*width: calc(100% - 30px);*/
+        padding: 0 6em 0 6em;
 
     }
-
-    .images-houses-5 {
-
+    .main-picture{
+        width: 800px;
+        object-fit: cover;
     }
-
-    .images-houses-6 {
-
-    }
-
-    h2 {
-        border-bottom: 1px solid black; /* This adds a 2px solid black border under your h2 elements */
-        /*border-width: 5em;*/
-        width: 100%;
-    }
-
-    .broker-add {
-        display: grid;
-        grid-column: 2;
-    }
-
-    .images-broker {
-        width: 400px;
-    }
-
-    .contact-broker {
-        display: none;
-    }
-
-    .general-information-page {
-        margin-top: -2em;
-    }
-
-
-    .grid-broker-price {
-        display: grid;
-        grid-template-columns: 65% 1fr;
-        grid-template-rows: 11em;
-
-
-
-    }
-
-    .gridconainer__info-grid {
-        display: block;
-    }
-
-    dt {
-        border-top: 2px solid #dadada;
-        width: 35em;
-
-    }
-
 }
