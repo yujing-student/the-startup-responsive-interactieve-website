@@ -35,7 +35,8 @@
 </header>
 <!--todo aria toevoegen-->
 <main class="gridcontainer" role="main">
-    <div class="images-grid-container" aria-label="Description of the images">
+
+    <div aria-label="Description of the images" class="images-grid-container">
         <section class=" gridcontainer__grid-item gridcontaienr__five-images-grid"><!--hoofdumages en tekst-->
             <img alt="hoofdfoto huis" class="main-picture images-houses-1" src="images/hoofdfoto.jpg">
             <ul class="carousel-images">
@@ -79,20 +80,19 @@
                                                      class="gridcontainer__small-images__images-next-to-main-image images-houses-7"
                                                      src="images/street.jpg"></li>
         </ul>
-
     </div>
 
 
-    <div class="grid-broker-price">
+    <div class="grid-broker-price"><!--div omdat deze 2 elementen op desktop naast elkaar moet-->
         <article class="gridconainer__info-grid gridcontainer__grid-item" role="article"><!--pronkgevel titel kijrgen-->
-
             <h1>pronkgevel1</h1>
             <p>1566 LN Assendelft</p>
             <span>136m²</span>
             <span>164m²</span>
             <span>4 slaapkamers</span>
-            <h2>450.000 k.k</h2>
+            <h2 class="grid-broker-price__price_house">450.000 k.k</h2>
         </article>
+
         <section class="broker-add gridcontainer__grid-item">
 
             <h3 id="broker">Advertentie makelaar</h3>
@@ -106,17 +106,18 @@
     </div>
 
     <article class="general-information-page"><!--price-->
-
         <p><a class="general-link" href="">Wat worden mijn maanlasten</a></p>
-        <p><a class="general-link contact-broker" href="#broker">contact met makelaar</a></p>
+<!--        <p><a class="general-link contact-broker" href="#broker">contact met makelaar</a></p>-->
         <p class="buttons-navigation-text">Klik op de volgende linkjes naar het onderwerp te gaan</p>
     </article>
+
     <ul>
         <li><a class="buttons-navigation-style general-link" href="#description">Omschrijving</a></li>
         <li><a class="buttons-navigation-style general-link" href="#characterize">kenmerken</a></li>
         <li><a class="buttons-navigation-style general-link" href="#transfer">overdracht</a></li>
         <li><a class="buttons-navigation-style general-link" href="#add-home">Waarde checken huis</a></li>
     </ul>
+
     <article>
         <h2 id="description">Omschrijving</h2>
         <p tabindex="0">Een pronkgevel is een gevel van een gebouw, dat is ontworpen om te imponeren. Het
@@ -127,6 +128,7 @@
             materialen gebruikt en decoraties benadrukken de belangrijkste onderdelen. Deze mooie
             omschrijving</p>
     </article>
+
     <button class="full-description" type="button">lees volledige omschrijving</button>
     <p class="hide-description" tabindex="0">Zie je ook bij deze eindwoning in Saendelft, recht
         tegenover een
@@ -243,7 +245,7 @@
     <p class="add-home__text-value-home" tabindex="0">Krijg direct inzicht in de waarde en populariteit van je huis door
         je adres toe
         te voegen in Mijn Huis.</p>
-    <div class="input-field-address">
+    <div class="input-field-address"><!--deze div is noodzakelijk voor het positoneren van de inputfields-->
 
         <label class="label-inputfield-postcode" for="housnumber"> postcode</label>
         <input class="input-field-postcode" id="postcode" name="postcode" placeholder=""/>
@@ -270,7 +272,6 @@
         <thead>
         <tr>
             <th>waterrijk</th>
-            <th></th> <!-- Added an empty column -->
         </tr>
         </thead>
         <tbody>
