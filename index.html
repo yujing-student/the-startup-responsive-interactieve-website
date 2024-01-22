@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="detailpagina funda" name="description">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link to JavaScript script -->
+    <script defer src="scripts/script.js"></script><!--geen defer vanwege error in w3c validator-->
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+    <title>testpagina</title>
+</head>
+<body><!--https://dequeuniversity.com/screenreaders/-->
+<!--https://codepen.io/joostf/pen/MOxQex-->
+<header>
+    <a href="https://www.funda.nl/koop/assendelft/huis-42349645-pronkgevel-1/">
+        <img alt="logo funda" class="log-funda" src="/images/fundawonen-logo.svg">
+    </a>
+    <button class="hamburger-icon" type="button"><img alt="menu icon" class="" src="/images/menubar.png">
+    </button>
+    <nav class="menu">
+        <ul class="menu-ul">
+            <li class="menu__li carousel-images__no-dot"><a class="menu-link" href="#">kopen</a></li>
+            <li class="menu__li carousel-images__no-dot"><a class="menu-link" href="#">huren</a></li>
+            <li class="menu__li carousel-images__no-dot"><a class="menu-link" href="#">verkopen</a></li>
+            <li class="menu__li carousel-images__no-dot"><a class="menu-link" href="#">Mijn huis</a></li>
+            <li class="menu__li carousel-images__no-dot"><img alt="login icon" src="/images/log-in-regular-24.png">
+            </li>
+
+        </ul>
+
+    </nav>
+</header>
+<main class="gridcontainer">
+    <div class="images-grid-container">
+        <section class=" gridcontainer__grid-item gridcontaienr__five-images-grid"><!--hoofdumages en tekst-->
+            <img alt="hoofdfoto huis" class="main-picture images-houses-1" src="/images/hoofdfoto.jpg">
+            <ul class="carousel-images">
+                <li class="carousel-images__no-dot">
+                    <img alt="hoofdfoto" class="small-images-carousel" src="/images/plattegrond.png">
+                    <p><a class="general-link" href="#">plattegrond</a></p>
+                </li>
+                <li class="carousel-images__no-dot">
+                    <img alt="hoofdfoto" class="small-images-carousel" src="/images/small-images/playground.jpg">
+                    <p><a class="general-link" href="#">360</a></p>
+                </li>
+                <li class="carousel-images__no-dot">
+                    <img alt="hoofdfoto" class="small-images-carousel" src="/images/small-images/front-houose.jpg">
+                    <p><a class="general-link" href="#">video</a></p>
+                </li>
+                <li class="carousel-images__no-dot">
+                    <img alt="hoofdfoto" class="small-images-carousel" src="/images/small-images/frontdoor.jpg">
+                    <p><a class="general-link" href="#">47 fotos</a></p>
+                </li>
+            </ul>
+        </section>
+        <ul class="gridcontainer__small-images">
+            <li class="carousel-images__no-dot">
+                <img alt="hoofdfoto huis"
+                     class="gridcontainer__small-images__images-next-to-main-image images-houses-dining-room"
+                     src="/images/eettafel.jpg">
+            </li>
+            <li class="carousel-images__no-dot"><img alt="hoofdfoto huis"
+                                                     class="gridcontainer__small-images__images-next-to-main-image images-houses-3"
+                                                     src="/images/woonkamer.jpg"></li>
+            <li class="carousel-images__no-dot"><img alt="hoofdfoto huis"
+                                                     class="gridcontainer__small-images__images-next-to-main-image images-houses-4"
+                                                     src="/images/tuin.jpg"></li>
+            <li class="carousel-images__no-dot"><img alt="hoofdfoto huis"
+                                                     class="gridcontainer__small-images__images-next-to-main-image images-houses-5"
+                                                     src="/images/video.jpg"></li>
+            <li class="carousel-images__no-dot"><img alt="hoofdfoto huis"
+                                                     class="gridcontainer__small-images__images-next-to-main-image images-houses-6"
+                                                     src="/images/stairs.jpg"></li>
+            <li class="carousel-images__no-dot"><img alt="hoofdfoto huis"
+                                                     class="gridcontainer__small-images__images-next-to-main-image images-houses-7"
+                                                     src="/images/street.jpg"></li>
+        </ul>
+
+    </div>
+
+
+    <div class="grid-broker-price">
+        <article class="gridconainer__info-grid gridcontainer__grid-item"><!--pronkgevel titel kijrgen-->
+
+            <h1>pronkgevel1</h1>
+            <p>1566 LN Assendelft</p>
+            <span>136m²</span>
+            <span>164m²</span>
+            <span>4 slaapkamers</span>
+            <h2>450.000 k.k</h2>
+        </article>
+        <section class="broker-add gridcontainer__grid-item">
+
+            <h3 id="broker">Advertentie makelaar</h3>
+            <img alt="makelaar" class="images-broker" src="/images/makelaar.png">
+
+            <button class="send-email" type="submit">stuur een email</button>
+            <p class="telephonumber">toon telefoonnummer</p>
+            <p class="hide-telehponenumber">Bel 075-6218928</p>
+        </section>
+
+    </div>
+
+    <article class="general-information-page"><!--price-->
+
+        <p><a class="general-link" href="">Wat worden mijn maanlasten</a></p>
+        <p><a class="general-link contact-broker" href="#broker">contact met makelaar</a></p>
+        <p class="buttons-navigation-text">Klik op de volgende linkjes naar het onderwerp te gaan</p>
+    </article>
+    <ul>
+        <li><a class="buttons-navigation-style general-link" href="#description">Omschrijving</a></li>
+        <li><a class="buttons-navigation-style general-link" href="#characterize">kenmerken</a></li>
+        <li><a class="buttons-navigation-style general-link" href="#transfer">overdracht</a></li>
+        <li><a class="buttons-navigation-style general-link" href="#add-home">Waarde checken huis</a></li>
+    </ul>
+    <article>
+        <h2 id="description">Omschrijving</h2>
+        <p tabindex="0">Een pronkgevel is een gevel van een gebouw, dat is ontworpen om te imponeren. Het
+            betreft
+            meestal de
+            voorgevel van een gebouw, waarbij er veel aandacht is besteed aan de architectuur, er zijn
+            betere
+            materialen gebruikt en decoraties benadrukken de belangrijkste onderdelen. Deze mooie
+            omschrijving</p>
+    </article>
+    <button class="full-description" type="button">lees volledige omschrijving</button>
+    <p class="hide-description" tabindex="0">Zie je ook bij deze eindwoning in Saendelft, recht
+        tegenover een
+        groot speelveld. Met vier slaapkamers, goede isolatie en energielabel A is dit een perfect huis
+        waar je
+        samen, of met kinderen, fantastisch kunt wonen. Parkeren kan voor de deur en in de zijstraat.
+
+        Deze eindwoning hoeft niet te pronken als een pauw, want de buitengevel trekt direct de
+        aandacht. Ook
+        het uitzicht aan de voorzijde, naar openbaar groen en volop speelruimte voor de kinderen, is
+        fantastisch. Het is maar 3,5 kilometer naar de oprit van de A8 en na ongeveer 10 minuten bereik
+        je het
+        kruispunt van de A7 en A8. Ga je voor werk naar Amsterdam, Haarlem of Schiphol dan woon je in
+        Saendelft
+        op de perfecte plek. Natuurlijk is openbaar vervoer uitgebreid voorzien in zo'n moderne
+        woonwijk.
+        Streekbussen en het spoor sluiten uitstekend aan op de omliggende steden. Bij het treinstation,
+        ongeveer
+        5 minuten fietsen, vlak bij liggen verschillende scholen zowel peuter-, basis- als voortgezet
+        onderwijs,
+        geclusterd met buitenschoolse opvang en crèches. Voor de dagelijkse boodschappen kun je terecht
+        in het
+        winkelcentrum met twee supermarkten, Albert Heijn en Vomar, een Hema, speciaalzaken,
+        verswinkels,
+        boetieks en restaurants.
+
+        Indeling:
+        Begane grond:
+        Open het poortje naar de geheel bestrate voortuin en loop naar de voordeur. In de brede hal zie
+        je de
+        trapopgang, meterkast en de toiletruimte met fonteintje. De lichte kleur op de wanden en de
+        ramen in de
+        voordeur versterken het gevoel van ruimte.
+        In de tuingerichte woonkamer zie je, omdat het een eindwoning is, ramen aan twee zijden.
+        Openslaande
+        deuren geven toegang tot de achtertuin en doordat de eettafel vlak naast de open keuken staat,
+        kun je de
+        woonkamer grotendeels als zitkamer indelen.
+        In de keuken staat een lichte hoekopstelling met een elektrische kookplaat, afzuigkap,
+        vaatwasser,
+        koel-/vriescombinatie, een oven en een magnetron. Ben je een echte keukenfanaat en wil je een
+        stapje
+        hoger, dan is de ruimte in de keuken groot genoeg om jouw droomkeuken met eiland te realiseren.
+
+    </p>
+    <h2 id="characterize">Kenmerken</h2>
+    <!--https://www.funda.nl/koop/assendelft/huis-42349645-pronkgevel-1/-->
+    <search>
+        <form>
+            <label for="kenmerk">zoek op kenmerken</label>
+            <label for="kenmerk"></label><input id="kenmerk" name="q" placeholder="zoeken kenmerken"
+                                                type="search"/>
+            <button class="search-button" type="submit">Zoeken</button>
+        </form>
+    </search>
+
+    <h3 id="transfer">overdracht</h3>
+    <dl class="dl-list">
+        <dt>vraagprijs</dt>
+        <dd>€ 450.000 kosten koper
+        </dd>
+        <dt>Vraagprijs per m²</dt>
+        <dd>€ 3.309
+        </dd>
+        <dt>Aangeboden sinds</dt>
+        <dd>Log in om te bekijken</dd>
+        <dt>Status</dt>
+        <dd>
+            Beschikbaar
+        </dd>
+        <dt>Aanvaarding</dt>
+        <dd>In overleg</dd>
+
+    </dl>
+    <h3>bouw</h3>
+    <dl>
+        <dt>Soort woonhuis</dt>
+        <dd>
+            Eengezinswoning, hoekwoning
+        </dd>
+        <dt>Soort bouw</dt>
+        <dd>Bestaande bouw
+        </dd>
+        <dt>Bouwjaar</dt>
+        <dd>2001</dd>
+        <dt>Soort dak</dt>
+        <dd>Zadeldak bedekt met pannen</dd>
+
+        <dt>Aanvaarding</dt>
+        <dd>In overleg</dd>
+        <dt>energielabel</dt>
+        <dd>a</dd>
+    </dl>
+    <button class="button-show-charactize" type="button">bekijk alle kenmerken</button>
+    <dl class="hide-characterize">
+        <dt>energielabel</dt>
+        <dd>a</dd>
+        <dt>vraagprijs</dt>
+        <dd>kosten koper</dd>
+        <dt>vraagprijs</dt>
+        <dd>kosten koper</dd>
+        <dt>vraagprijs</dt>
+        <dd>kosten koper</dd>
+        <dt>vraagprijs</dt>
+        <dd>kosten koper</dd>
+        <dt>vraagprijs</dt>
+        <dd>kosten koper</dd>
+        <dt></dt>
+        <dd></dd>
+        <dt></dt>
+        <dd></dd>
+    </dl>
+    <h3 id="add-home">Wat is jouw huis waard?</h3>
+    <p class="add-home__text-value-home" tabindex="0">Krijg direct inzicht in de waarde en populariteit van je huis door
+        je adres toe
+        te voegen in Mijn Huis.</p>
+    <div class="input-field-address">
+
+        <label class="label-inputfield-postcode" for="housnumber"> postcode</label>
+        <input class="input-field-postcode" id="postcode" name="postcode" placeholder=""/>
+
+        <label class="label-inputfield-number" for="postcode"> huisnr</label>
+        <input class="input-field-number" id="housnumber" name="housnumber" type="number"/>
+
+        <label class="label-inputfield-ad" for="add"> toevoeging</label>
+        <input class="input-field-add" id="add" name="toevoeging" placeholder=""
+               type="number"/>
+
+    </div>
+    <button class="checkvalue" type="button">check je waarde</button>
+    <article>
+        <h2>activiteiten</h2>
+
+        <p class="activity__text">Aantal keer gezien:<span class="">24</span></p>
+        <p class="activity__text">Toegevoegd aan favorieten:<span class="">24</span></p>
+        <p class="activity__text">op funda sinds:<span class="">24</span></p>
+
+    </article>
+    <h2>buurt</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>waterrijk</th>
+            <th></th> <!-- Added an empty column -->
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>inwoners</td>
+            <td>w5610</td>
+        </tr>
+        <tr>
+            <td>Gezin met kinderen</td>
+            <td>55%</td>
+        </tr>
+        <tr>
+            <td>Gem. vraagprijs / m²</td>
+            <td>€ 3.692</td>
+        </tr>
+
+        </tbody>
+    </table>
+    <button class="button-show-charactize" type="button">meer over</button>
+    <ul>
+        <li>
+            <a href="">basischool</a></li>
+        <li><a href="">supermarkt</a></li>
+        <li><a href="">bushalter</a>
+        </li>
+    </ul>
+
+    <img alt="map-images" class="image-change" src="/images/map.png">
+
+</main>
+<footer>
+</footer>
+</body>
+</html>
+
+
+<!--todo https://www.sitepoint.com/css-viewport-units-quick-start/ naar vh -->
