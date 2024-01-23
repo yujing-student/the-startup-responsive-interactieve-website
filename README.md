@@ -25,6 +25,8 @@ mobiel en tablet en grid voor desktop</p>
 <p>De interactieve javascript interactie die ik nu heb, is vrij simpel 
 een voorbeeld is een hamburgermenue je klikt erop en het menu komt tevoorschijn</p>
 
+zie de <a href="https://github.com/yujing-student/the-startup-responsive-interactieve-website/wiki">wiki</a> voor meer informatie over het proces en bekijk de code om er meer over weten te komen
+
 ## Licentie
 
 This project is licensed under the terms of the [MIT license](./LICENSE).
