@@ -6,7 +6,8 @@
 
 ## Beschrijving
 De opdracht die ik van funda gekregen heb is om een detailpagina te bouwen
-![img.png](img.png)
+<img width="564" alt="image" src="https://github.com/yujing-student/the-startup-responsive-interactieve-website/assets/100352887/af4ed1af-735b-4bf6-ba71-d153f3701f8a">
+
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
