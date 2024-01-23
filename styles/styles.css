@@ -65,8 +65,9 @@ header {
     margin-top: 0;
 }
 a:hover{
-    color: var(--white);
-    background-color: var(--blue);
+    /*color: var(--white);*/
+    /*background-color: var(--blue);*/
+    text-decoration-line: underline;
 }
 
 main {
@@ -130,6 +131,9 @@ button:active {
     /*font-size: 1em;*/
     text-decoration: none;
 }
+.buttons-navigation-style,.general-link{
+    text-decoration: none;
+}
 
 .buttons-navigation-style, .full-description, .button-show-charactize { /*4 buttons to next describe*/
     font-size: 1em;
@@ -141,9 +145,7 @@ button:active {
 
 }
 
-.general-link:hover {
-    text-decoration: underline;
-}
+
 
 input:active {
     background-color: #adf7ff;
@@ -327,12 +329,7 @@ dd {
     margin-left: 2em;
 
 }
-.button-show-charactize{
-    display: grid;
-    grid-column: 1;
-    grid-row: 5;
-    margin-left: 2em;
-}
+
 
 /*todo andere classnmaes voor grid en volgorde nog aanpassen boven naar beneden en checken op onnodige classnames*/
 .broker-add {
@@ -460,10 +457,8 @@ dd {
 
 @media (min-width: 992px) {
     main {
-        /*position: absolute;*/
-        /*left: calc(54% - 50px);*/
-        /*transform: translate(-50%, 0%);*/
-
+        position: relative;
+        left: calc(10vh - 6vh);
 
     }
     footer {
@@ -476,6 +471,8 @@ dd {
         display: grid;
         grid-template-rows: auto;
         grid-template-columns: auto auto;
+        max-width: 50em;
+
     }
 
 
@@ -509,8 +506,9 @@ dd {
 
     .grid-broker-price {/*columnr 87*/
         display: grid;
-        grid-template-columns: 55% 1fr;
+        grid-template-columns: 63% 1fr;
         grid-template-rows: 11em;
+        max-width: 54em;
 
 
     }
@@ -549,15 +547,30 @@ dd {
 @media (min-width: 1300px) {
     main {
         position: relative;
-        left: calc(8% - 50px);
+        /*left: calc(5% - 50px);*/
+
         /*transform: translate(-50%, 0%);*/
-        /*padding: 0 6em 0 6em;*/
-        max-width: 80%;
+        padding: 0 6em 0 2em;
 
     }
 
     .main-picture {/* nr 41*/
         width: 800px;
         object-fit: cover;
+    }
+    .grid-broker-price{
+        /*max-width: 80em;*/
+        grid-template-columns: 97% 1fr;
+    }
+}
+@media (min-width: 1600px){
+    main {
+        position: relative;
+        padding: 0 12em 0 17em;
+
+
+    }
+    .grid-broker-price{
+        grid-template-columns: 87% 1fr;
     }
 }

@@ -4,12 +4,13 @@ ShowMoreTextCharacterize();
 showtelephonenumber();
 
 function ShowHamburgerMenu () {/*hamburger menu*/
-    let buttonicon = document.querySelector('.hamburger-icon');/*select icon hamburger*/
+    let button = document.querySelector('.hamburger-icon');/*select icon hamburger*/
     let menu = document.querySelector('.menu-ul');
-    buttonicon.addEventListener('click', () => {/*clickfunction*/
+
+    button.addEventListener('click', () => {/*clickfunction*/
         menu.classList.toggle('menu-ul-open');/*open the menue*/
 
-    })
+    });
 }
 function ShowMoreTextDescription(){
     let buttonFullDescription = document.querySelector('.full-description');
@@ -19,7 +20,7 @@ function ShowMoreTextDescription(){
 
         hideDescription.classList.toggle('open-description');
 
-    })
+    });
 }
 function ShowMoreTextCharacterize(){
     let buttonFullCharacterize = document.querySelector('.button-show-charactize');
@@ -28,7 +29,7 @@ function ShowMoreTextCharacterize(){
 
         hideText.classList.toggle('open-characterize');
 
-    })
+    });
 }
 
 function showtelephonenumber(){
@@ -36,7 +37,7 @@ function showtelephonenumber(){
     let phoneNumber = document.querySelector('.hide-telehponenumber');
     telephonnumber.addEventListener("click", () => {
         phoneNumber.classList.toggle('open-telephonenumber');
-        telephonnumber.scrollIntoView({behavior: 'smooth'});
+        // telephonnumber.scrollIntoView({behavior: 'smooth'});
 
 
     });
