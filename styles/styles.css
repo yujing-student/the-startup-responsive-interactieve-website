@@ -233,31 +233,69 @@ dd {
 }
 .grid-container-neighbor{
     display: grid;
-
-}
-table {
-    border: solid #050542;
-}
-
-th {
-    border: 0.15em solid;
-    font-size: 1em;
-    line-height: 1.5;
-    padding: 0.5em 0.5em 0.5em 0.5em;
+    grid-template-columns: 15em 15em;
+    grid-template-rows: auto auto auto auto;
+    border: 0.1em solid black;
+    width: 30em;
 
 
 }
 
-/*dit zijn de celblockej*/
-td, tr {
-    background-color: var(--white);
-    border: 0.15em solid;
-    font-size: 1em;
-    line-height: 1.5;
-    /*margin: var(--margin-1em);*/
-    padding: 0.5em 0.5em 0.5em 0.5em;
-}
+.watterijk{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1;
 
+    border-bottom: 1px solid black;
+    font-size: 30px;
+    height: 2em;
+
+    /*margin: 0 0 1em 1em;*/
+}
+.inowners{
+    display: grid;
+    grid-column: 1;
+    grid-row: 2;
+    border-bottom: 0.1em solid black;
+    /*font-size:1.2em;*/
+    height: 2em;
+}
+.numbers{
+    display: grid;
+    grid-column: 2;
+    grid-row: 2;
+    border-bottom: 0.1em solid black;
+    height: 2em;
+}
+.house-family{
+    display: grid;
+    grid-column: 1;
+    grid-row: 3;
+    border-bottom: 0.1em solid black;
+    height: 2em;
+}
+.percentage{
+    display: grid;
+    grid-column: 2;
+    grid-row: 3;
+    border-bottom: 0.1em solid black;
+    height: 2em;
+
+}
+.m2{
+    display: grid;
+    grid-column: 1;
+    grid-row: 4;
+    /*border-bottom: 0.1em solid black;*/
+}
+.bedrag{
+    display: grid;
+    grid-column: 2;
+    grid-row: 4;
+
+}
+/*todo andere classnmaes voor grid en volgorde nog aanpassen boven naar beneden en checken op onnodige classnames*/
 .broker-add {
     display: grid;
 }
@@ -297,10 +335,10 @@ td, tr {
         margin: 0 0 0 0;
     }
 
-    h2 {
-        border-bottom: 1px solid black; /* This adds a 2px solid black border under your h2 elements */
-        /*border-width: 5em;*/
-    }
+    /*h2 {*/
+    /*    border-bottom: 1px solid black; !* This adds a 2px solid black border under your h2 elements *!*/
+    /*    !*border-width: 5em;*!*/
+    /*}*/
 
 
 }
