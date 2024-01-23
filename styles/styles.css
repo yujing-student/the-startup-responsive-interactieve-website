@@ -23,9 +23,11 @@ body {
     --blue: #0042B3; /*huisstijl #0071B3 orgineel*/
     --white: #ffffff;
     --orange: #F7A100;
-    --black: #333333
-}
+    --black: #333333;
 
+    --margin-input-fields: 0 0 1em 0;
+    --margin-2-em:2em;
+}
 
 
 header {
@@ -35,9 +37,11 @@ header {
     /*max-width: 100%;*/
     width: 100%;
 }
+
 .log-funda {
     width: 150px;
 }
+
 .menu {
     display: flex;
     /*justify-content: space-between;*/
@@ -64,7 +68,8 @@ header {
     display: block;
     margin-top: 0;
 }
-a:hover{
+
+a:hover {
     /*color: var(--white);*/
     /*background-color: var(--blue);*/
     text-decoration-line: underline;
@@ -80,7 +85,7 @@ main {
     width: 280px;
 }
 
-.general-link {/*plattegrond 360 under the main image*/
+.general-link { /*plattegrond 360 under the main image*/
     text-decoration: none;
     color: var(--blue);
 }
@@ -93,7 +98,8 @@ main {
 .small-images-carousel {
     width: 100px;
 }
-.carousel-images__no-dot {/*no dot sign*/
+
+.carousel-images__no-dot { /*no dot sign*/
     list-style-type: none;
     margin-left: 1em;
 }
@@ -107,11 +113,12 @@ main {
 }
 
 
-.grid-broker-price__information{/*nr87*/
+.grid-broker-price__information { /*nr87*/
     /*background-color: red;*/
     margin-right: 1em;
 }
-.grid-broker-price__price_house{
+
+.grid-broker-price__price_house {
     font-size: 1.5em;
 
 }
@@ -131,7 +138,8 @@ button:active {
     /*font-size: 1em;*/
     text-decoration: none;
 }
-.buttons-navigation-style,.general-link{
+
+.buttons-navigation-style, .general-link {
     text-decoration: none;
 }
 
@@ -144,7 +152,6 @@ button:active {
     border-radius: 5em;
 
 }
-
 
 
 input:active {
@@ -192,7 +199,7 @@ dd {
 }
 
 .add-home__text-value-home {
-    margin-bottom: 2em;
+    margin-bottom: var(--margin-2-em);
 }
 
 .input-field-address {
@@ -206,42 +213,42 @@ dd {
     display: grid;
     grid-column: 1;
     grid-row: 1;
-    margin: 0 0 1em 0;
+    margin: var(--margin-input-fields);
 }
 
 .input-field-postcode {
     display: grid;
     grid-column: 1;
     grid-row: 2;
-    margin: 0 0 1em 0;
+    margin: var(--margin-input-fields);
 }
 
 .label-inputfield-number {
     display: grid;
     grid-column: 2;
     grid-row: 1;
-    margin: 0 0 1em 0;
+    margin: var(--margin-input-fields);
 }
 
 .input-field-number {
     display: grid;
     grid-column: 2;
     grid-row: 2;
-    margin: 0 0 1em 0;
+    margin: var(--margin-input-fields);
 }
 
 .label-inputfield-ad {
     display: grid;
     grid-column: 3;
     grid-row: 1;
-    margin: 0 0 1em 0;
+    margin: var(--margin-input-fields);
 }
 
 .input-field-add {
     display: grid;
     grid-column: 3;
     grid-row: 2;
-    margin: 0 0 1em 0;
+    margin: var(--margin-input-fields);
 }
 
 .activity__text {
@@ -265,7 +272,8 @@ dd {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row: 1;
-    margin-right: 2em;
+    margin-right: var(--margin-2-em);
+
 
     /*border-bottom: 0.1em solid black;*/
     font-size: 30px;
@@ -282,7 +290,7 @@ dd {
     border-bottom: 0.1em solid black;
     /*font-size:1.2em;*/
     height: 2em;
-    margin-left: 2em;
+    margin-left: var(--margin-2-em);
 }
 
 .numbers {
@@ -291,7 +299,7 @@ dd {
     grid-row: 2;
     border-bottom: 0.1em solid black;
     height: 2em;
-    margin-left: 2em;
+    margin-left: var(--margin-2-em);
 }
 
 .house-family {
@@ -300,7 +308,7 @@ dd {
     grid-row: 3;
     border-bottom: 0.1em solid black;
     height: 2em;
-    margin-left: 2em;
+    margin-left: var(--margin-2-em);
 }
 
 .percentage {
@@ -309,7 +317,7 @@ dd {
     grid-row: 3;
     border-bottom: 0.1em solid black;
     height: 2em;
-    margin-left: 2em;
+    margin-left:var(--margin-2-em);
 
 }
 
@@ -317,7 +325,7 @@ dd {
     display: grid;
     grid-column: 1;
     grid-row: 4;
-    margin-left: 2em;
+    margin-left: var(--margin-2-em);
     /*border-bottom: 0.1em solid black;*/
     /*border-bottom: 0.1em solid black;*/
 }
@@ -326,7 +334,7 @@ dd {
     display: grid;
     grid-column: 2;
     grid-row: 4;
-    margin-left: 2em;
+    margin-left: var(--margin-2-em);
 
 }
 
@@ -352,7 +360,7 @@ dd {
     display: block;
 }
 
-.grid-container-footer{
+.grid-container-footer {
     background-color: #dadada;
 }
 
@@ -367,7 +375,8 @@ dd {
         display: block;
         margin: 0 0 0 0;
     }
-    .second-block,.tird-block,.fouthr-block{
+
+    .second-block, .tird-block, .fouthr-block {
         display: none;
     }
 
@@ -433,7 +442,8 @@ dd {
         width: 35em;
 
     }
-    .grid-container-footer{
+
+    .grid-container-footer {
         display: grid;
 
         grid-template-areas: 'block1 block2'
@@ -441,13 +451,15 @@ dd {
 
     }
 
-    .second-block{
+    .second-block {
         grid-area: block1;
     }
-    .tird-block{
+
+    .tird-block {
         grid-area: block4;
     }
-    .fouthr-block{
+
+    .fouthr-block {
         grid-area: block3;
     }
 
@@ -461,13 +473,14 @@ dd {
         left: calc(10vh - 6vh);
 
     }
+
     footer {
         background-color: #dadada;
 
     }
 
 
-    .gridcontaienr__five-images-grid {/*columnr number 40*/
+    .gridcontaienr__five-images-grid { /*columnr number 40*/
         display: grid;
         grid-template-rows: auto;
         grid-template-columns: auto auto;
@@ -504,7 +517,7 @@ dd {
     }
 
 
-    .grid-broker-price {/*columnr 87*/
+    .grid-broker-price { /*columnr 87*/
         display: grid;
         grid-template-columns: 63% 1fr;
         grid-template-rows: 11em;
@@ -522,23 +535,26 @@ dd {
         grid-column: 2;
 
     }
-    .grid-container-footer{
+
+    .grid-container-footer {
         display: grid;
 
         grid-template-areas:
                 'block1 block2 block3 block4';
 
-            /*margin-left: 4.2em;*/
+        /*margin-left: 4.2em;*/
 
     }
 
-    .second-block{
+    .second-block {
         grid-area: block1;
     }
-    .tird-block{
+
+    .tird-block {
         grid-area: block4;
     }
-    .fouthr-block{
+
+    .fouthr-block {
         grid-area: block3;
     }
 
@@ -554,23 +570,26 @@ dd {
 
     }
 
-    .main-picture {/* nr 41*/
+    .main-picture { /* nr 41*/
         width: 800px;
         object-fit: cover;
     }
-    .grid-broker-price{
+
+    .grid-broker-price {
         /*max-width: 80em;*/
         grid-template-columns: 97% 1fr;
     }
 }
-@media (min-width: 1600px){
+
+@media (min-width: 1600px) {
     main {
         position: relative;
         padding: 0 12em 0 17em;
 
 
     }
-    .grid-broker-price{
+
+    .grid-broker-price {
         grid-template-columns: 87% 1fr;
     }
 }
