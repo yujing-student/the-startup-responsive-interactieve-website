@@ -360,7 +360,9 @@ dd {
 .open-telephonenumber {
     display: block;
 }
-
+footer{
+    margin-top:var(--margin-2-em);
+}
 .grid-container-footer {
     background-color: #dadada;
 }
