@@ -26,15 +26,7 @@ body {
     --black: #333333
 }
 
-.carousel-images__no-dot {
-    list-style-type: none;
-    margin-left: 1em;
-}
 
-.general-link {
-    text-decoration: none;
-    color: var(--blue);
-}
 
 header {
     background-color: orange;
@@ -43,16 +35,9 @@ header {
     /*max-width: 100%;*/
     width: 100%;
 }
-
-main {
-
-    margin: 0 2em 0 2em;
-}
-
 .log-funda {
     width: 150px;
 }
-
 .menu {
     display: flex;
     /*justify-content: space-between;*/
@@ -79,9 +64,24 @@ main {
     display: block;
     margin-top: 0;
 }
+a:hover{
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+main {
+
+    margin: 0 2em 0 2em;
+}
+
 
 .main-picture {
     width: 280px;
+}
+
+.general-link {/*plattegrond 360 under the main image*/
+    text-decoration: none;
+    color: var(--blue);
 }
 
 .gridcontainer__small-images_carousel-images {
@@ -92,6 +92,10 @@ main {
 .small-images-carousel {
     width: 100px;
 }
+.carousel-images__no-dot {/*no dot sign*/
+    list-style-type: none;
+    margin-left: 1em;
+}
 
 .carousel-images {
     overflow-x: auto;
@@ -100,7 +104,9 @@ main {
     justify-content: space-between;
     /*width: 20em;*/
 }
-.grid-broker-price__information{
+
+
+.grid-broker-price__information{/*nr87*/
     /*background-color: red;*/
     margin-right: 1em;
 }
@@ -245,7 +251,7 @@ dd {
 .grid-container-neighbor {
     display: grid;
     grid-template-columns: 15em 15em;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: 4em 3em 3em 3em 2em;
     border: 0.1em solid black;
     width: 30em;
 
@@ -321,6 +327,12 @@ dd {
     margin-left: 2em;
 
 }
+.button-show-charactize{
+    display: grid;
+    grid-column: 1;
+    grid-row: 5;
+    margin-left: 2em;
+}
 
 /*todo andere classnmaes voor grid en volgorde nog aanpassen boven naar beneden en checken op onnodige classnames*/
 .broker-add {
@@ -343,11 +355,8 @@ dd {
     display: block;
 }
 
-.commercial-add {
-    /*background-color: orange;*/
-    /*height: 20em;*/
-    /*width: 10em;*/
-
+.grid-container-footer{
+    background-color: #dadada;
 }
 
 @media (max-width: 579px) {
@@ -360,6 +369,9 @@ dd {
     .menu-ul-open {
         display: block;
         margin: 0 0 0 0;
+    }
+    .second-block,.tird-block,.fouthr-block{
+        display: none;
     }
 
 
@@ -424,6 +436,23 @@ dd {
         width: 35em;
 
     }
+    .grid-container-footer{
+        display: grid;
+
+        grid-template-areas: 'block1 block2'
+        'block3 block4';
+
+    }
+
+    .second-block{
+        grid-area: block1;
+    }
+    .tird-block{
+        grid-area: block4;
+    }
+    .fouthr-block{
+        grid-area: block3;
+    }
 
 
 }
@@ -431,14 +460,19 @@ dd {
 
 @media (min-width: 992px) {
     main {
-        position: absolute;
-        left: calc(54% - 50px);
-        transform: translate(-50%, 0%);
+        /*position: absolute;*/
+        /*left: calc(54% - 50px);*/
+        /*transform: translate(-50%, 0%);*/
 
 
     }
+    footer {
+        background-color: #dadada;
 
-    .gridcontaienr__five-images-grid {
+    }
+
+
+    .gridcontaienr__five-images-grid {/*columnr number 40*/
         display: grid;
         grid-template-rows: auto;
         grid-template-columns: auto auto;
@@ -490,19 +524,39 @@ dd {
         grid-column: 2;
 
     }
+    .grid-container-footer{
+        display: grid;
+
+        grid-template-areas:
+                'block1 block2 block3 block4';
+
+            /*margin-left: 4.2em;*/
+
+    }
+
+    .second-block{
+        grid-area: block1;
+    }
+    .tird-block{
+        grid-area: block4;
+    }
+    .fouthr-block{
+        grid-area: block3;
+    }
 
 }
 
 @media (min-width: 1300px) {
     main {
-        position: absolute;
-        left: calc(55% - 50px);
-        transform: translate(-50%, 0%);
-        padding: 0 6em 0 6em;
+        position: relative;
+        left: calc(8% - 50px);
+        /*transform: translate(-50%, 0%);*/
+        /*padding: 0 6em 0 6em;*/
+        max-width: 80%;
 
     }
 
-    .main-picture {
+    .main-picture {/* nr 41*/
         width: 800px;
         object-fit: cover;
     }
