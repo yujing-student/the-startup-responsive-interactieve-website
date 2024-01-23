@@ -19,7 +19,7 @@
     <a href="https://www.funda.nl/koop/assendelft/huis-42349645-pronkgevel-1/">
         <img alt="logo funda" class="log-funda" src="images/fundawonen-logo.svg">
     </a>
-    <button class="hamburger-icon" type="button"><img alt="menu icoon" class="" src="images/menubar.png">
+    <button class="hamburger-icon" type="button"><img alt="menu icoon" src="images/menubar.png">
     </button>
     <nav class="menu">
         <ul class="menu-ul">
@@ -35,10 +35,10 @@
     </nav>
 </header>
 <!--todo aria toevoegen-->
-<main class=""><!--gridcontainer-->
+<main><!--gridcontainer-->
 
     <div class="gridcontaienr__five-images-grid"><!--hoofdimages en tekst-->
-            <img alt="hoofdfoto huis" class="main-picture images-houses-1" src="images/hoofdfoto.jpg">
+            <img alt="hoofdfoto huis" class="main-picture" src="images/hoofdfoto.jpg">
             <ul class="gridcontainer__small-images">
                 <li class="carousel-images__no-dot">
                     <img alt="hoofdfoto huis"
@@ -49,16 +49,16 @@
                                                          class="gridcontainer__small-images_carousel-images livingroom"
                                                          src="images/woonkamer.jpg"></li>
                 <li class="carousel-images__no-dot"><img alt="garden"
-                                                         class="gridcontainer__small-images_carousel-images images-houses-garden"
+                                                         class="gridcontainer__small-images_carousel-images "
                                                          src="images/tuin.jpg"></li>
                 <li class="carousel-images__no-dot"><img alt="video van het huis"
-                                                         class="gridcontainer__small-images_carousel-images images-houses-video"
+                                                         class="gridcontainer__small-images_carousel-images"
                                                          src="images/video.jpg"></li>
                 <li class="carousel-images__no-dot"><img alt="gamg met trappen"
-                                                         class="gridcontainer__small-images_carousel-images images-houses-stairs"
+                                                         class="gridcontainer__small-images_carousel-images"
                                                          src="images/stairs.jpg"></li>
                 <li class="carousel-images__no-dot"><img alt="straat van het huis"
-                                                         class="gridcontainer__small-images_carousel-images images-houses-street"
+                                                         class="gridcontainer__small-images_carousel-images"
                                                          src="images/street.jpg"></li>
             </ul>
     </div>
@@ -85,16 +85,17 @@
 
 
     <div class="grid-broker-price"><!--this must be a div because the 2 elements must on desktop next to each other-->
-        <section class="gridconainer__info-grid gridcontainer__grid-item">
-            <h1>pronkgevel1</h1>
-            <p>1566 LN Assendelft</p>
-            <span>136m²</span>
-            <span>164m²</span>
-            <span>4 slaapkamers</span>
-            <h2 class="grid-broker-price__price_house">450.000 k.k</h2><!--this is h2 because it must be visisble-->
+        <section>
+            <h2> pronkgevel1</h2>
+            <span class="grid-broker-price__information" aria-label="opppervlakte huis">136m² wonen</span><!--no <p> because the content is not next to each other-->
+            <span class="grid-broker-price__information">164m² perceel</span>
+            <span class="grid-broker-price__information">4 slaapkamers</span>
+            <p class="grid-broker-price__price_house">450.000 k.k</p><!--this is h2 because it must be visisble-->
+            <p><a class="general-link" href="">Wat worden mijn maanlasten</a></p>
         </section>
 
-        <section class="broker-add gridcontainer__grid-item">
+
+        <section class="broker-add">
 
             <h3 id="broker">Advertentie makelaar</h3>
             <img alt="foto van demakelaar" class="images-broker" src="images/makelaar.png">
@@ -107,7 +108,7 @@
     </div>
 
 
-    <p><a class="general-link" href="">Wat worden mijn maanlasten</a></p>
+
     <!--        <p><a class="general-link contact-broker" href="#broker">contact met makelaar</a></p>-->
     <p class="buttons-navigation-text">Klik op de volgende linkjes naar het onderwerp te gaan</p>
 
@@ -188,7 +189,7 @@
 
     <h3 id="transfer">overdracht</h3>
 
-    <dl class="dl-list">
+    <dl>
         <dt>vraagprijs</dt>
         <dd>€ 450.000 kosten koper
         </dd>
@@ -267,15 +268,18 @@
 
     <h2>buurt</h2>
     <div class="grid-container-neighbor">
-        <span class="watterijk">waterrijk</span>
-        <span class="inowners">inwoners</span>
-        <span class="numbers">w5610</span>
-        <span class="house-family">Gezin met kinderen</span>
-        <span class="percentage">55%</span>
-        <span class="m2">Gem. vraagprijs m²</span>
-        <span class="bedrag">3692</span>
-        <button class="button-show-charactize" type="button">meer over</button>
+        <ul>
+            <li class="watterijk">waterrijk</li>
+            <li class="inowners">inwoners</li>
+            <li class="numbers">w5610</li>
+            <li class="house-family">Gezin met kinderen</li>
+            <li class="percentage">55%</li>
+            <li class="m2">Gem. vraagprijs m²</li>
+            <li class="bedrag">3692</li>
+        </ul>
+        <button class="button-show-charactize" role="button" type="button">meer over</button>
     </div>
+
 
     <ul>
         <li>
