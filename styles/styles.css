@@ -261,8 +261,8 @@ dd {
 /*todo hier nog naar kijken met de max width voor op mobiel*/
 .grid-container-neighbor {
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: 4em 3em 3em 3em 2em;
+    grid-template-columns: 10em 1fr;
+    grid-template-rows: auto auto auto auto auto;
     border: 0.1em solid black;
     max-width: 30em;
 
@@ -291,7 +291,7 @@ dd {
     border-bottom: 0.1em solid black;
     /*font-size:1.2em;*/
     height: 2em;
-    /*margin-left: var(--margin-2-em);*/
+    margin-left: var(--margin-2-em);
 }
 
 .numbers {
@@ -308,7 +308,7 @@ dd {
     grid-column: 1;
     grid-row: 3;
     border-bottom: 0.1em solid black;
-    height: 2em;
+    /*height: 2em;*/
     margin-left: var(--margin-2-em);
 }
 
@@ -368,6 +368,11 @@ footer{
 }
 .footer-links{
     color: var(--blue);
+    text-decoration-line: none;
+}
+.footer-links:hover{
+    color:#000000;
+    text-decoration-line: underline;
 }
 
 @media (max-width: 579px) {
