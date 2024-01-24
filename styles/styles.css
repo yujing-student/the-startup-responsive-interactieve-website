@@ -555,7 +555,7 @@ footer{
     .grid-broker-price { /*columnr 87*/
         display: grid;
         grid-template-columns: 63% 1fr;
-        grid-template-rows: 11em;
+        grid-template-rows: 14em;
         max-width: 54em;
 
 
