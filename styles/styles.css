@@ -52,8 +52,13 @@ header {
     position: relative;
     left: 2em;
     top: -1em;
-    background-color: var(--white);
+    background-color: var(--orange);
+    /*background-color: var(--white);*/
 }
+.login-button{
+    background-color: var(--orange);
+}
+
 
 .hamburger-icon:hover {
     background-color: var(--blue);
@@ -82,7 +87,9 @@ main {
 
 
 .main-picture {
-    width: 280px;
+    /*width: 280px;*/
+    width: 100%;
+    object-fit: cover;
 }
 
 .general-link { /*plattegrond 360 under the main image*/
@@ -349,7 +356,7 @@ dd {
     width: 15em;
 }
 
-.images-broker, .image-change {
+.images-broker {
     width: 280px;
 }
 
@@ -376,6 +383,10 @@ footer{
 }
 
 @media (max-width: 579px) {
+    h2 {
+        border-bottom: 1px solid black; /* This adds a 2px solid black border under your h2 elements */
+        /*border-width: 5em;*/
+    }
     .menu-ul {
         display: block;
         /* todo   translate toevoegen dat die van boven naar beneden gaat de interactie*/
@@ -389,6 +400,10 @@ footer{
 
     .second-block, .tird-block, .fouthr-block {
         display: none;
+    }
+    .image-change{
+        width: 100%;
+        object-fit: cover;
     }
 
 
@@ -428,7 +443,9 @@ footer{
     }
 
     .main-picture {
-        width: 500px;
+        /*width: 500px;*/
+        width: 100%;
+        object-fit: cover;
 
     }
 
@@ -490,6 +507,10 @@ footer{
     footer {
         background-color: #dadada;
 
+    }
+    .main-picture { /* nr 41*/
+        width: 600px;
+        /*object-fit: cover;*/
     }
 
 
