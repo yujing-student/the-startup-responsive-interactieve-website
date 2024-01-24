@@ -5,7 +5,7 @@
 <p>voor funda maak ik de detailpagina</p>
 
 ## Beschrijving
-De opdracht die ik van funda gekregen heb is om een detailpagina te bouwen
+De opdracht die ik van funda gekregen heb is om een detailpagina te bouwen vanaf scratch 
 <img width="564" alt="image" src="https://github.com/yujing-student/the-startup-responsive-interactieve-website/assets/100352887/af4ed1af-735b-4bf6-ba71-d153f3701f8a">
 
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
