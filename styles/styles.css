@@ -366,6 +366,9 @@ footer{
 .grid-container-footer {
     background-color: #dadada;
 }
+.footer-links{
+    color: var(--blue);
+}
 
 @media (max-width: 579px) {
     .menu-ul {
