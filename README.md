@@ -5,7 +5,7 @@
 <p>voor funda maak ik de detailpagina</p>
 
 ## Beschrijving
-De opdracht die ik van funda gekregen heb is om een detailpagina te bouwen
+De opdracht die ik van funda gekregen heb is om een detailpagina te bouwen vanaf scratch 
 <img width="564" alt="image" src="https://github.com/yujing-student/the-startup-responsive-interactieve-website/assets/100352887/af4ed1af-735b-4bf6-ba71-d153f3701f8a">
 
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
@@ -26,6 +26,11 @@ mobiel en tablet en grid voor desktop</p>
 een voorbeeld is een hamburgermenue je klikt erop en het menu komt tevoorschijn</p>
 
 zie de <a href="https://github.com/yujing-student/the-startup-responsive-interactieve-website/wiki">wiki</a> voor meer informatie over het proces en bekijk de code om er meer over weten te komen
+
+## wat is wel gelukt en wat niet
+<p>ik heb een pagina die responsive is en met semantische code</p>
+
+<p>het is niet gelukt om de pagina volledig na te maken met ook echt alle onderdelen van funda omdat dit heel erg moeilijk is</p>
 
 ## Licentie
 
