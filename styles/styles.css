@@ -258,13 +258,13 @@ dd {
     width: 200px;
 }
 
+/*todo hier nog naar kijken met de max width voor op mobiel*/
 .grid-container-neighbor {
     display: grid;
-    grid-template-columns: 15em 15em;
+    grid-template-columns: auto auto;
     grid-template-rows: 4em 3em 3em 3em 2em;
     border: 0.1em solid black;
-    width: 30em;
-
+    max-width: 30em;
 
 }
 
@@ -273,7 +273,7 @@ dd {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row: 1;
-    margin-right: var(--margin-2-em);
+    /*margin-right: var(--margin-2-em);*/
 
 
     /*border-bottom: 0.1em solid black;*/
@@ -291,7 +291,7 @@ dd {
     border-bottom: 0.1em solid black;
     /*font-size:1.2em;*/
     height: 2em;
-    margin-left: var(--margin-2-em);
+    /*margin-left: var(--margin-2-em);*/
 }
 
 .numbers {
