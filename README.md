@@ -27,6 +27,11 @@ een voorbeeld is een hamburgermenue je klikt erop en het menu komt tevoorschijn<
 
 zie de <a href="https://github.com/yujing-student/the-startup-responsive-interactieve-website/wiki">wiki</a> voor meer informatie over het proces en bekijk de code om er meer over weten te komen
 
+## wat is wel gelukt en wat niet
+<p>ik heb een pagina die responsive is en met semantische code</p>
+
+<p>het is niet gelukt om de pagina volledig na te maken met ook echt alle onderdelen van funda omdat dit heel erg moeilijk is</p>
+
 ## Licentie
 
 This project is licensed under the terms of the [MIT license](./LICENSE).
