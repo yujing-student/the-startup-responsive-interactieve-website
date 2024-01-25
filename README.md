@@ -2,7 +2,7 @@
 
 # detailpagina funda
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
-<p>voor funda maak ik de detailpagina</p>
+<p>voor funda maak ik een detailpagina detailpagina </p>
 
 ## Beschrijving
 De opdracht die ik van funda gekregen heb is om een detailpagina te bouwen vanaf scratch 
